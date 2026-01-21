@@ -2885,8 +2885,7 @@ target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" da
       </div>
     </footer>
   </div>
- 
- 
+
 <script>
   (function () {
     const body = document.body;
@@ -2917,32 +2916,3 @@ btnJa.addEventListener("click", () => setLang("ja"));
 </script>
 </body>
 </html>
-
-<script>
-  (function () {
-    const body = document.body;
-    const btnJa = document.querySelector('[data-lang-btn="ja"]');
-    const btnEn = document.querySelector('[data-lang-btn="en"]');
-function setLang(lang) {
-      if (lang === "en") {
-        body.classList.add("lang-en");
-        body.classList.remove("lang-ja");
-        btnEn.classList.add("active");
-        btnJa.classList.remove("active");
-        btnEn.setAttribute("aria-pressed", "true");
-        btnJa.setAttribute("aria-pressed", "false");
-      } else {
-        body.classList.add("lang-ja");
-        body.classList.remove("lang-en");
-        btnJa.classList.add("active");
-        btnEn.classList.remove("active");
-        btnJa.setAttribute("aria-pressed", "true");
-        btnEn.setAttribute("aria-pressed", "false");
-      }
-    }
-btnJa.addEventListener("click", () => setLang("ja"));
-    btnEn.addEventListener("click", () => setLang("en"));
-// 初期状態を保証
-    setLang(body.classList.contains("lang-en") ? "en" : "ja");
-  })();
-</script>
