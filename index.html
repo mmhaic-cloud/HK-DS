@@ -21,11 +21,11 @@
       --radius-lg: 18px;
       --radius-pill: 999px;
     }
-
+ 
     * {
       box-sizing: border-box;
     }
-
+ 
     body {
       margin: 0;
       padding: 0;
@@ -35,22 +35,22 @@
       color: var(--text-main);
       line-height: 1.6;
     }
-
+ 
     a {
       color: var(--accent);
       text-decoration: none;
     }
-
+ 
     a:hover {
       text-decoration: underline;
     }
-
+ 
     .page {
       max-width: 1080px;
       margin: 0 auto;
       padding: 24px 16px 40px;
     }
-
+ 
     header {
       display: flex;
       flex-direction: column;
@@ -68,23 +68,23 @@
         0 18px 45px rgba(15, 23, 42, 0.9),
         0 0 0 1px rgba(15, 23, 42, 0.7);
     }
-
+ 
     .title-main {
       font-size: clamp(1.7rem, 2.4vw + 0.8rem, 2.1rem);
       font-weight: 700;
       letter-spacing: 0.05em;
     }
-
+ 
     .title-main span {
       color: var(--accent);
     }
-
+ 
     .title-sub {
       font-size: 0.95rem;
       color: var(--text-sub);
       max-width: 720px;
     }
-
+ 
     .header-bottom {
       display: flex;
       flex-wrap: wrap;
@@ -92,7 +92,7 @@
       align-items: center;
       justify-content: space-between;
     }
-
+ 
     .lang-switch {
       display: inline-flex;
       padding: 4px;
@@ -100,7 +100,7 @@
       background: rgba(15, 23, 42, 0.85);
       border: 1px solid rgba(148, 163, 184, 0.5);
     }
-
+ 
     .lang-btn {
       border: none;
       padding: 6px 14px;
@@ -111,13 +111,13 @@
       cursor: pointer;
       transition: all 0.15s ease;
     }
-
+ 
     .lang-btn.active {
       background: var(--accent);
       color: #020617;
       font-weight: 600;
     }
-
+ 
     .tagline {
       font-size: 0.8rem;
       color: var(--text-sub);
@@ -127,20 +127,20 @@
       background: rgba(15, 23, 42, 0.65);
       white-space: nowrap;
     }
-
+ 
     main {
       margin-top: 24px;
       display: grid;
       grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
       gap: 18px;
     }
-
+ 
     @media (max-width: 880px) {
       main {
         grid-template-columns: minmax(0, 1fr);
       }
     }
-
+ 
     .section {
       background: linear-gradient(
         135deg,
@@ -152,7 +152,7 @@
       padding: 18px 18px 16px;
       box-shadow: 0 12px 30px rgba(15, 23, 42, 0.8);
     }
-
+ 
     .section:nth-child(1) {
       background: linear-gradient(
         135deg,
@@ -160,19 +160,19 @@
         rgba(15, 23, 42, 0.97)
       );
     }
-
+ 
     .section h2 {
       margin: 0 0 4px;
       font-size: 1.05rem;
       letter-spacing: 0.03em;
     }
-
+ 
     .section p.lead {
       margin: 0 0 12px;
       font-size: 0.85rem;
       color: var(--text-sub);
     }
-
+ 
     .pill {
       display: inline-flex;
       align-items: center;
@@ -184,7 +184,7 @@
       color: var(--accent);
       margin-bottom: 10px;
     }
-
+ 
     .badge {
       display: inline-block;
       padding: 2px 6px;
@@ -195,14 +195,14 @@
       color: var(--text-sub);
       margin-right: 6px;
     }
-
+ 
     .list {
       list-style: none;
       margin: 6px 0 0;
       padding: 0;
       font-size: 0.85rem;
     }
-
+ 
     .list li {
       padding: 5px 0;
       border-bottom: 1px dashed rgba(31, 41, 55, 0.7);
@@ -210,60 +210,60 @@
       flex-direction: column;
       gap: 2px;
     }
-
+ 
     .list li:last-child {
       border-bottom: none;
     }
-
+ 
     .ep-title {
       font-weight: 500;
     }
-
+ 
     .ep-meta {
       font-size: 0.72rem;
       color: var(--text-sub);
     }
-
+ 
     .ep-meta span {
       margin-right: 8px;
     }
-
+ 
     .link-arrow::after {
       content: "↗";
       font-size: 0.75em;
       margin-left: 4px;
     }
-
+ 
     .section-small {
       margin-top: 14px;
       padding-top: 12px;
       border-top: 1px dashed rgba(55, 65, 81, 0.8);
     }
-
+ 
     footer {
       margin-top: 24px;
       font-size: 0.75rem;
       color: var(--text-sub);
       text-align: center;
     }
-
+ 
     footer a {
       font-size: 0.75rem;
     }
-
+ 
     /* language visibility */
     [data-lang-block="ja"] {
       display: block;
     }
-
+ 
     [data-lang-block="en"] {
       display: none;
     }
-
+ 
     .lang-en [data-lang-block="ja"] {
       display: none;
     }
-
+ 
     .lang-en [data-lang-block="en"] {
       display: block;
     }
@@ -279,7 +279,7 @@
         <div class="title-main" data-lang-block="en">
           <span>Hikari no Kusuri</span> & Dawn Series Side Stories
         </div>
-
+ 
         <p class="title-sub" data-lang-block="ja">
           港町「みなと野」を舞台にした朝ドラ風フィクション
           『ひかりのくすり』と、同じ世界線に連なる
@@ -294,7 +294,7 @@
           (currency, resources, energy, education, etc.).
         </p>
       </div>
-
+ 
       <div class="header-bottom">
         <div class="lang-switch" aria-label="Language switch">
           <button class="lang-btn active" data-lang-btn="ja">日本語</button>
@@ -308,7 +308,7 @@
         </div>
       </div>
     </header>
-
+ 
     <main>
       <!-- 左カラム：ひかりのくすり -->
       <section class="section">
@@ -318,10 +318,10 @@
         <div class="pill" data-lang-block="en">
           🎬 Morning drama main series
         </div>
-
+ 
         <h2 data-lang-block="ja">朝ドラ『ひかりのくすり』本編リンク</h2>
         <h2 data-lang-block="en">“Hikari no Kusuri” Main Episodes</h2>
-
+ 
         <p class="lead" data-lang-block="ja">
           まずは「第0話：解説・読み方ガイド」からお読みいただくと、
           世界観・登場人物・読み方のコツがつかみやすくなります。
@@ -330,7 +330,7 @@
           We recommend starting from “Episode 0: Guide & How to Read” to
           quickly grasp the setting, characters, and reading style.
         </p>
-
+ 
         <ul class="list">
           <!-- ★ 第0話（読み方ガイド） -->
           <li>
@@ -371,11 +371,11 @@
               <span>Morning Drama "Hikari no Kusuri" Episode 1</span>
             </div>
             <a href="https://note.com/modern_owl1687/n/n22dbab5a687a" target="_blank" 
-		rel="noopener" class="ep-title link-arrow" data-lang-block="ja">
+rel="noopener" class="ep-title link-arrow" data-lang-block="ja">
              🎬  第 1話「港町の薬屋の息子」 
             </a>
             <a href="https://note.com/modern_owl1687/n/nb6cf00a43156" target="_blank" 
-		rel="noopener" class="ep-title link-arrow" data-lang-block="en">
+rel="noopener" class="ep-title link-arrow" data-lang-block="en">
              📺 Episode 1: "The Apothecary Son in a Port City" ↗ 
             </a>
          </li>
@@ -389,11 +389,11 @@
               <span>Morning Drama "Hikari no Kusuri" Episode 2</span>
             </div>
             <a href="https://note.com/modern_owl1687/n/n6bf052b6dacd" 
-		target=" target="_blank" rel=" class="ep-title link-arrow" data-lang-block="ja">
+target="_blank" rel=" class="ep-title link-arrow" data-lang-block="ja">
               🎬 第 2話「対症療法の現場へ」 
             </a>
             <a href="https://note.com/modern_owl1687/n/n1cec46283d20" 
-		target=" target="_blank" rel=" class="ep-title link-arrow" data-lang-block="en">
+target="_blank" rel=" class="ep-title link-arrow" data-lang-block="en">
               📺  Episode 2: "To the Scene of Symptomatic Treatment" 
             </a>
           </li>
@@ -407,11 +407,11 @@
               <span> Morning Drama "Hikari no Kusuri" Episode 3</span>
             </div>
             <a href="https://note.com/modern_owl1687/n/n475c2b852dd0" 
-		target=" target="_blank" rel=" class="ep-title link-arrow" data-lang-block="ja">
+target="_blank" rel=" class="ep-title link-arrow" data-lang-block="ja">
              🎬 第 3話「進路希望、記入欄はひとつだけ」 
             </a>
             <a href="https://note.com/modern_owl1687/n/ndc81d95d0c32" 
-		target=" target="_blank" rel=" class="ep-title link-arrow" data-lang-block="en">
+target="_blank" rel=" class="ep-title link-arrow" data-lang-block="en">
              📺 Episode 3: "Career Hope, Only One Field" 
             </a>
           </li>
@@ -425,11 +425,11 @@
               <span>Morning Drama "Hikari no Kusuri" Episode 4</span>            
             </div>
             <a href="https://note.com/modern_owl1687/n/n5c03638474ce" 
-		target=" target="_blank" rel=" class="ep-title link-arrow" data-lang-block="ja">
+target="_blank" rel=" class="ep-title link-arrow" data-lang-block="ja">
               🎬  第 4話「E判定と、港のベンチ」 
             </a>
             <a href="https://note.com/modern_owl1687/n/n82540ee13792" 
-		target=" target="_blank" rel="noopener class="ep-title link-arrow" data-lang-block="en">
+target="_blank" rel="noopener class="ep-title link-arrow" data-lang-block="en">
               📺 Episode 4: "E Judgment and Port Bench" 
             </a>
          </li>
@@ -443,11 +443,11 @@
               <span>Morning Drama "Hikari no Kusuri" Episode 5 Paret 1</span>
             </div>
             <a href="https://note.com/modern_owl1687/n/ne7af9cd3e48a" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
              🎬 第 5話 その１「不合格通知と、もう一度の春」 
             </a>
             <a href="https://note.com/modern_owl1687/n/n5cab942f3b7e" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
               📺  Episode 5 Part 1: Top "Rejection Notice and Another Spring" 
             </a>
           </li>
@@ -461,11 +461,11 @@
               <span>Morning Drama "Hikari no Kusuri" Episode 5 Part 2</span>
             </div>
             <a href="https://note.com/modern_owl1687/n/n3fa7a9230196" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
               🎬  第 5話 その２「受験番号は、もう間違えない」 
             </a>
             <a href="https://note.com/modern_owl1687/n/n792994a159ed" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
               📺  Episode 5 Part 2: Bottom "Don't Make a Mistake About the Exam Number Anymore" 
             </a>
           </li>
@@ -479,11 +479,11 @@
               <span>Morning Drama "Hikari no Kusuri" Episode 6</span>
             </div>
             <a href="https://note.com/modern_owl1687/n/n9fc92692ea75" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
               🎬 第 6話「白衣の海と、ひとり分の初心」 
             </a>
             <a href="https://note.com/modern_owl1687/n/na64a73e7ab40" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
               📺 Episode 6: "The Sea of White Coat and One Person's Original Intention" 
             </a>
           </li>
@@ -497,11 +497,11 @@
               <span>Morning Drama "Hikari no Kusuri" Episode 7</span>
             </div>
             <a href="https://note.com/modern_owl1687/n/nfe092707c0ef" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
              🎬  第 7話「医学部という“白衣の海”―カルチャーショックは止まらない」
             </a>
             <a href="https://note.com/modern_owl1687/n/nfa434ed6db94" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
               📺 Episode 7: "The "Sea of White Coats" of Medical School - Culture Shock Never Stops" 
             </a>
           </li>
@@ -515,11 +515,11 @@
               <span>Morning Drama "Hikari no Kusuri" Episode 8</span>
             </div>
             <a href="https://note.com/modern_owl1687/n/n2f64959148af" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
               🎬  第 8話「対症療法から完治へ —— 准教授との出会い」 
             </a>
             <a href="https://note.com/modern_owl1687/n/n36e782817e3c" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
               📺 Episode 8: "From Symptomatic Treatment to Complete Cure: Meeting with an Associate Professor" 
             </a>
           </li>
@@ -533,11 +533,11 @@
               <span>Morning Drama "Hikari no Kusuri" Episode 9</span>
             </div>
             <a href="https://note.com/modern_owl1687/n/naff3f990b68d" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
              🎬 第 9話「ラボのドアをノックする日」 
             </a>
             <a href="https://note.com/modern_owl1687/n/nad91b0c7b569" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
               📺 Episode 9: "The Day I Knocked on the Lab Door" 
             </a>
           </li>
@@ -551,11 +551,11 @@
               <span>Morning Drama "Hikari no Kusuri" Episode 10</span>
             </div>
             <a href="https://note.com/modern_owl1687/n/n586ccbec1e06" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
              🎬 第10話「細胞が全部死んだ夜」 
             </a>
             <a href="https://note.com/modern_owl1687/n/ne719c7bf72fe" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
               📺 Episode 10: The Night All the Cells Died 
             </a>
           </li>
@@ -569,16 +569,16 @@
               <span>Morning Drama "Hikari no Kusuri" Episode 11</span>
             </div>
             <a href="https://note.com/modern_owl1687/n/ne4b02000dde6" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
              🎬 第11話「今日を守る手のぬくもり」 
             </a>
             <a href="https://note.com/modern_owl1687/n/n8f39ef692238" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
               🎬 Episode 11: "The Warmth of the Hand to Protect Today" 
             </a>
           </li>
 <!--11 ★  ★  -->
-
+ 
           <li>
             <span class="badge">EP 12</span>
             <div class="ep-meta" data-lang-block="ja">
@@ -588,11 +588,11 @@
               <span>Morning Drama "Hikari no Kusuri" Episode 12</span>
             </div>
             <a href="https://note.com/modern_owl1687/n/ne81c184cb629" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
               🎬 第12話「生きるか死ぬかの夜」  
             </a>
             <a href="https://note.com/modern_owl1687/n/ncce6fdc35492" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
               🎬 Episode 12: "The Night of Life or Death" 
             </a>
           </li>
@@ -606,11 +606,11 @@
               <span> Morning Drama "Hikari no Kusuri" Episode 13</span>
             </div>
             <a href="https://note.com/modern_owl1687/n/nf21266aa3eba" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
               🎬 第13話「献血の壁と、mRNAの扉」 
             </a>
             <a href="https://note.com/modern_owl1687/n/n8954afaedd37" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
              🎬 Episode 13: "The Blood Donation Wall and the mRNA Door" 
             </a>
           </li>
@@ -624,11 +624,11 @@
               <span>Morning Drama "Hikari no Kusuri" Episode 14</span>            
             </div>
             <a href="https://note.com/modern_owl1687/n/n54e082d54337" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
               🎬 第14話「カプセルに、明日の医療をつめて」 
             </a>
             <a href="https://note.com/modern_owl1687/n/n25228ecaf0a0" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
               🎬 Episode 14: "Tomorrow's Medical Care in a Capsule" 
             </a>
          </li>
@@ -642,21 +642,21 @@
               <span>Morning Drama "Hikari no Kusuri" Episode 15 </span>
             </div>
             <a href="https://note.com/modern_owl1687/n/n0bbc36c9a104" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
              🎬 第15話「リジェクトメールは突然に」
             </a>
             <a href="https://note.com/modern_owl1687/n/ncd7af25f97bd" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
               🎬 Episode 15: "Reject Email Suddenly" 
             </a>
           </li>
 <!--15 ★  ★  -->
           <li>
             <span class="badge">EP Guide 1</span>
-           <a href="https://note.com/modern_owl1687/n/na73623b2c15d"_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja"> 
+           <a href="https://note.com/modern_owl1687/n/na73623b2c15d"target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja"> 
               🌅 朝ドラ『ひかりのくすり』総合リンクポータル
             </a>
-           <a href="https://note.com/modern_owl1687/n/nf75c4fdcc0d7"_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en"> 
+           <a href="https://note.com/modern_owl1687/n/nf75c4fdcc0d7"target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en"> 
               🌅 Morning Drama “Hikari no Kusuri” — Climax Guide
             </a>
            </li>
@@ -670,11 +670,11 @@
               <span> New Year Short Series Part 1</span>
             </div>
            <a href="https://note.com/modern_owl1687/n/n3073409dc508"
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
               🌅 第1話 『発車まで、あと三十分』
             </a>
            <a href="https://note.com/modern_owl1687/n/n54c53faeb82b"
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
              🌅 A Journey That Continues Part 1 — “Thirty Minutes Until Departure”
             </a>
           </li>
@@ -688,11 +688,11 @@
               <span> New Year Short Series Part 2 </span>
             </div>
            <a href="https://note.com/modern_owl1687/n/n066452f79014"
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
              🌅 第2話 『同じホーム』
             </a>
            <a href="https://note.com/modern_owl1687/n/n3f901b98e4ca"
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
              🌅 A Journey That Continues Part 2 — “The Same Platform”
             </a>
           </li>
@@ -706,11 +706,11 @@
               <span> New Year Short Series Part 3 </span>
             </div>
            <a href="https://note.com/modern_owl1687/n/nfc3eac6caa75"
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
               🌅 第3話（最終話） 『次の駅へ』
             </a>
            <a href="https://note.com/modern_owl1687/n/n8ca6feb34a82"
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
              🌅 A Journey That Continues Part 3 — “To the Next Station”
             </a>
           </li>
@@ -724,11 +724,11 @@
               <span>Morning Drama "Hikari no Kusuri" Episode 16</span>
             </div>
             <a href="https://note.com/modern_owl1687/n/nc48f5feec308" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
               🎬 第16話 「ひとつのカプセルが、世界に届いた」 
             </a>
             <a href="https://note.com/modern_owl1687/n/nafd63dab698f" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
               🎬 Episode 16: "A Capsule Reaches the World" 
             </a>
           </li>
@@ -742,11 +742,11 @@
               <span>Morning Drama "Hikari no Kusuri" Episode 17</span>
             </div>
             <a href="https://note.com/modern_owl1687/n/n952f86c46d7d" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
              🎬 第17話「企業から声がかかるベンチャー準備」
             </a>
             <a href="https://note.com/modern_owl1687/n/n46f9f8ad44c4" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
               🎬 Episode 17: "Preparing for a venture called by a company" 
             </a>
           </li>
@@ -760,11 +760,11 @@
               <span>Morning Drama "Hikari no Kusuri" Episode 18</span>
             </div>
             <a href="https://note.com/modern_owl1687/n/ncef390b011aa" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
               🎬 第18話「誰と組むか」 
             </a>
             <a href="https://note.com/modern_owl1687/n/n9b2c02b5f55c" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
               🎬 Episode 18: Who to Team Up With 
             </a>
           </li>
@@ -778,11 +778,11 @@
               <span>Morning Drama "Hikari no Kusuri" Episode 19</span>
             </div>
             <a href="https://note.com/modern_owl1687/n/nb11678ceb61a" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
              🎬 第19話「大学内の調整（知財、教授会、病院側との話し合い）」 
             </a>
             <a href="https://note.com/modern_owl1687/n/ne93e3c205417" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
               🎬 Episode 19: "Coordination within the University (Discussions with Intellectual Property, Faculty Associations, and Hospitals)" 
             </a>
           </li>
@@ -796,11 +796,11 @@
               <span>Morning Drama "Hikari no Kusuri" Episode 20</span>
             </div>
             <a href="https://note.com/modern_owl1687/n/n5fcd0ac53945" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
               🎬 第20話「最初のチームミーティング（役割分担と最初のすれ違い）」
             </a>
             <a href="https://note.com/modern_owl1687/n/n3667c409ca6e" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
               🎬 Episode 20: The First Team Meeting
             </a>
           </li>
@@ -814,11 +814,11 @@
               <span>Morning Drama "Hikari no Kusuri" Episode 21</span>
             </div>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
               
             </a>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
              
             </a>
           </li>
@@ -832,11 +832,11 @@
               <span>Morning Drama "Hikari no Kusuri" Episode 22</span>
             </div>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
                 
             </a>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
                
             </a>
           </li>
@@ -850,11 +850,11 @@
               <span> Morning Drama "Hikari no Kusuri" Episode 23</span>
             </div>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
                
             </a>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
              
             </a>
           </li>
@@ -868,11 +868,11 @@
               <span>Morning Drama "Hikari no Kusuri" Episode 24</span>            
             </div>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
                
             </a>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
                
             </a>
          </li>
@@ -886,11 +886,11 @@
               <span>Morning Drama "Hikari no Kusuri" Episode 25 </span>
             </div>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
              
             </a>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
               
             </a>
           </li>
@@ -904,11 +904,11 @@
               <span>Morning Drama "Hikari no Kusuri" Episode 26</span>
             </div>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
                
             </a>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
                
             </a>
           </li>
@@ -922,11 +922,11 @@
               <span>Morning Drama "Hikari no Kusuri" Episode 27</span>
             </div>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
              2
             </a>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
               2
             </a>
           </li>
@@ -940,11 +940,11 @@
               <span>Morning Drama "Hikari no Kusuri" Episode 28</span>
             </div>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
                
             </a>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
                
             </a>
           </li>
@@ -958,11 +958,11 @@
               <span>Morning Drama "Hikari no Kusuri" Episode 29</span>
             </div>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
               
             </a>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
               
             </a>
           </li>
@@ -976,11 +976,11 @@
               <span>Morning Drama "Hikari no Kusuri" Episode 30</span>
             </div>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
               
             </a>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
               
             </a>
           </li>
@@ -994,11 +994,11 @@
               <span>Morning Drama "Hikari no Kusuri" Episode 31</span>
             </div>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
               
             </a>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
              
             </a>
           </li>
@@ -1012,11 +1012,11 @@
               <span>Morning Drama "Hikari no Kusuri" Episode 32</span>
             </div>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
                 
             </a>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
                
             </a>
           </li>
@@ -1030,11 +1030,11 @@
               <span> Morning Drama "Hikari no Kusuri" Episode 33</span>
             </div>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
                
             </a>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
              
             </a>
           </li>
@@ -1048,11 +1048,11 @@
               <span>Morning Drama "Hikari no Kusuri" Episode 34</span>            
             </div>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
                
             </a>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
                
             </a>
          </li>
@@ -1066,11 +1066,11 @@
               <span>Morning Drama "Hikari no Kusuri" Episode 35 </span>
             </div>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
              
             </a>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
               
             </a>
           </li>
@@ -1084,11 +1084,11 @@
               <span>Morning Drama "Hikari no Kusuri" Episode 36</span>
             </div>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
                
             </a>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
                
             </a>
           </li>
@@ -1102,11 +1102,11 @@
               <span>Morning Drama "Hikari no Kusuri" Episode 37</span>
             </div>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
              
             </a>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
               
             </a>
           </li>
@@ -1120,11 +1120,11 @@
               <span>Morning Drama "Hikari no Kusuri" Episode 38</span>
             </div>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
                
             </a>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
                
             </a>
           </li>
@@ -1138,11 +1138,11 @@
               <span>Morning Drama "Hikari no Kusuri" Episode 39</span>
             </div>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
               
             </a>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
               
             </a>
           </li>
@@ -1156,11 +1156,11 @@
               <span>Morning Drama "Hikari no Kusuri" Episode 40</span>
             </div>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
               
             </a>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
               
             </a>
           </li>
@@ -1174,11 +1174,11 @@
               <span>Morning Drama "Hikari no Kusuri" Episode 41</span>
             </div>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
               
             </a>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
              
             </a>
           </li>
@@ -1192,11 +1192,11 @@
               <span>Morning Drama "Hikari no Kusuri" Episode 42</span>
             </div>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
                 
             </a>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
                
             </a>
           </li>
@@ -1210,11 +1210,11 @@
               <span> Morning Drama "Hikari no Kusuri" Episode 43</span>
             </div>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
                
             </a>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
              
             </a>
           </li>
@@ -1228,11 +1228,11 @@
               <span>Morning Drama "Hikari no Kusuri" Episode 44</span>            
             </div>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
                
             </a>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
                
             </a>
          </li>
@@ -1246,11 +1246,11 @@
               <span>Morning Drama "Hikari no Kusuri" Episode 45 </span>
             </div>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
              
             </a>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
               
             </a>
           </li>
@@ -1264,11 +1264,11 @@
               <span>Morning Drama "Hikari no Kusuri" Episode 46</span>
             </div>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
                
             </a>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
                
             </a>
           </li>
@@ -1282,11 +1282,11 @@
               <span>Morning Drama "Hikari no Kusuri" Episode 47</span>
             </div>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
              
             </a>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
               
             </a>
           </li>
@@ -1300,11 +1300,11 @@
               <span>Morning Drama "Hikari no Kusuri" Episode 48</span>
             </div>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
                
             </a>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
                
             </a>
           </li>
@@ -1318,11 +1318,11 @@
               <span>Morning Drama "Hikari no Kusuri" Episode 49</span>
             </div>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
               
             </a>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
               
             </a>
           </li>
@@ -1336,11 +1336,11 @@
               <span>Morning Drama "Hikari no Kusuri" Episode 50</span>
             </div>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
               
             </a>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
               
             </a>
           </li>
@@ -1354,11 +1354,11 @@
               <span>Morning Drama "Hikari no Kusuri" Episode 51</span>
             </div>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
               
             </a>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
              
             </a>
           </li>
@@ -1372,11 +1372,11 @@
               <span>Morning Drama "Hikari no Kusuri" Episode 52</span>
             </div>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
                 
             </a>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
                
             </a>
           </li>
@@ -1390,11 +1390,11 @@
               <span> Morning Drama "Hikari no Kusuri" Episode 53</span>
             </div>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
                
             </a>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
              
             </a>
           </li>
@@ -1408,11 +1408,11 @@
               <span>Morning Drama "Hikari no Kusuri" Episode 54</span>            
             </div>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
                
             </a>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
                
             </a>
          </li>
@@ -1426,11 +1426,11 @@
               <span>Morning Drama "Hikari no Kusuri" Episode 55 </span>
             </div>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
              
             </a>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
               
             </a>
           </li>
@@ -1444,11 +1444,11 @@
               <span>Morning Drama "Hikari no Kusuri" Episode 56</span>
             </div>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
                
             </a>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
                
             </a>
           </li>
@@ -1462,11 +1462,11 @@
               <span>Morning Drama "Hikari no Kusuri" Episode 57</span>
             </div>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
              
             </a>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
               
             </a>
           </li>
@@ -1480,11 +1480,11 @@
               <span>Morning Drama "Hikari no Kusuri" Episode 58</span>
             </div>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
                
             </a>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
                
             </a>
           </li>
@@ -1498,11 +1498,11 @@
               <span>Morning Drama "Hikari no Kusuri" Episode 59</span>
             </div>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
               
             </a>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
               
             </a>
           </li>
@@ -1516,11 +1516,11 @@
               <span>Morning Drama "Hikari no Kusuri" Episode 60</span>
             </div>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
               
             </a>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
               
             </a>
           </li>
@@ -1534,11 +1534,11 @@
               <span>Morning Drama "Hikari no Kusuri" Episode 61</span>
             </div>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
               
             </a>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
              
             </a>
           </li>
@@ -1552,11 +1552,11 @@
               <span>Morning Drama "Hikari no Kusuri" Episode 62</span>
             </div>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
                 
             </a>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
                
             </a>
           </li>
@@ -1570,11 +1570,11 @@
               <span> Morning Drama "Hikari no Kusuri" Episode 63</span>
             </div>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
                
             </a>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
              
             </a>
           </li>
@@ -1588,11 +1588,11 @@
               <span>Morning Drama "Hikari no Kusuri" Episode 64</span>            
             </div>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
                
             </a>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
                
             </a>
          </li>
@@ -1606,11 +1606,11 @@
               <span>Morning Drama "Hikari no Kusuri" Episode 65 </span>
             </div>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
              
             </a>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
               
             </a>
           </li>
@@ -1624,11 +1624,11 @@
               <span>Morning Drama "Hikari no Kusuri" Episode 66</span>
             </div>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
                
             </a>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
                
             </a>
           </li>
@@ -1642,11 +1642,11 @@
               <span>Morning Drama "Hikari no Kusuri" Episode 67</span>
             </div>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
              
             </a>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
               
             </a>
           </li>
@@ -1660,11 +1660,11 @@
               <span>Morning Drama "Hikari no Kusuri" Episode 68</span>
             </div>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
                
             </a>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
                
             </a>
           </li>
@@ -1678,11 +1678,11 @@
               <span>Morning Drama "Hikari no Kusuri" Episode 69</span>
             </div>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
               
             </a>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
               
             </a>
           </li>
@@ -1696,11 +1696,11 @@
               <span>Morning Drama "Hikari no Kusuri" Episode 70</span>
             </div>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
               
             </a>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
               
             </a>
           </li>
@@ -1714,11 +1714,11 @@
               <span>Morning Drama "Hikari no Kusuri" Episode 71</span>
             </div>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
               
             </a>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
              
             </a>
           </li>
@@ -1732,11 +1732,11 @@
               <span>Morning Drama "Hikari no Kusuri" Episode 72</span>
             </div>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
                 
             </a>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
                
             </a>
           </li>
@@ -1750,11 +1750,11 @@
               <span> Morning Drama "Hikari no Kusuri" Episode 73</span>
             </div>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
                
             </a>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
              
             </a>
           </li>
@@ -1768,11 +1768,11 @@
               <span>Morning Drama "Hikari no Kusuri" Episode 74</span>            
             </div>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
                
             </a>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
                
             </a>
          </li>
@@ -1786,11 +1786,11 @@
               <span>Morning Drama "Hikari no Kusuri" Episode 75 </span>
             </div>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
              
             </a>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
               
             </a>
           </li>
@@ -1804,11 +1804,11 @@
               <span>Morning Drama "Hikari no Kusuri" Episode 76</span>
             </div>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
                
             </a>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
                
             </a>
           </li>
@@ -1822,11 +1822,11 @@
               <span>Morning Drama "Hikari no Kusuri" Episode 77</span>
             </div>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
              
             </a>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
               
             </a>
           </li>
@@ -1840,11 +1840,11 @@
               <span>Morning Drama "Hikari no Kusuri" Episode 78</span>
             </div>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
                
             </a>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
                
             </a>
           </li>
@@ -1858,11 +1858,11 @@
               <span>Morning Drama "Hikari no Kusuri" Episode 79</span>
             </div>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
               
             </a>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
               
             </a>
           </li>
@@ -1876,17 +1876,17 @@
               <span>Morning Drama "Hikari no Kusuri" Episode 80</span>
             </div>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
               
             </a>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en">
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
               
             </a>
           </li>
 <!--80 ★  ★📺 Episode 80: The Hamada Family Visits Minatono   -->
-
-
+ 
+ 
         <div class="section-small">
           <p class="lead" data-lang-block="ja">
             ※ 各リンクの <code>href="#"</code> を、ご自身の note の実際のURLに差し替えてください。
@@ -1897,7 +1897,7 @@
           </p>
         </div>
       </section>
-
+ 
       <!-- 右カラム：黎明シリーズ外伝など -->
       <section class="section">
         <div class="pill" data-lang-block="ja">
@@ -1906,10 +1906,10 @@
         <div class="pill" data-lang-block="en">
           🌏 Dawn Series Side Stories & Picks
         </div>
-
+ 
         <h2 data-lang-block="ja">黎明シリーズ外伝（通貨・資源・エネルギー・教育）</h2>
         <h2 data-lang-block="en">Dawn Series Side Stories</h2>
-
+ 
         <p class="lead" data-lang-block="ja">
           『AI副大臣：黎明のルール』と同じ世界線にある外伝群です。
           通貨・資源・エネルギー・教育など、マクロなテーマを物語として描いています。
@@ -1921,7 +1921,7 @@
           They explore macro-themes such as currency, resources, energy,
           and education through near-future fiction.
         </p>
-
+ 
         <ul class="list">
           <li>
             <span class="badge">🌅 Fast Guide</span>
@@ -1949,6 +1949,7 @@
             <div class="ep-meta" data-lang-block="en">
               <span>📺 Based on the birth of LUX-01, the AI Deputy Minister Who Does Not Judge, the official reading guide to the world of a series depicting currency, resources, energy, frontline judgment, and institutional design. An entrance that guides you through the three-tiered structure of stories, side stories, and ideas.
 </span>
+		</div>
           </li>
         </ul>
         <ul class="list">
@@ -2012,7 +2013,7 @@ It was born because the world was cornered.”</span>
 In the 2030s, the world begins to abandon judgment. People increasingly say, “Please decide for us,” and delegate decisions to AI.
 A classified national project aims to build an “AI Vice-Minister” capable of massive administrative decision-making—but the design philosophy is still wavering.
 Politicians seek AI to evade responsibility, while citizens hope for fairness.
-The story quietly depicts a “branch point in history,” just before the prototype LUX-01 is born.</span>
+The story quietly depicts a “branch point in history,” just before the prototype LUX-01 is born. </span>
           </li>
           <li>
             <span class="badge">2032</span>
@@ -2168,7 +2169,7 @@ Japan faces the fragility of its own resource sovereignty,
 and LUX-01 is drawn into the most political form of judgment:
 　　“How to distribute benefits and risks.”</span>
           </li>
-
+ 
           <li>
             <span class="badge">【黎明シリーズ外伝・特番】　　　</span>
             <a
@@ -2223,16 +2224,16 @@ It was born because the world was cornered.”</span>
             </a>
             <div class="ep-meta" data-lang-block="ja">
               <span>🎬  国家の「決める力」が
-	少しずつ AIへ滑り落ちていく時代。
-	通貨・鉱物資源・エネルギー。
-	3つの主権が揺らぐ瞬間を描くマクロ政治経済ライン。
+少しずつ AIへ滑り落ちていく時代。
+通貨・鉱物資源・エネルギー。
+3つの主権が揺らぐ瞬間を描くマクロ政治経済ライン。
 </span>
             </div>
             <div class="ep-meta" data-lang-block="en">
               <span>📺 国家の「決める力」が
-	少しずつ AIへ滑り落ちていく時代。
-	通貨・鉱物資源・エネルギー。
-	3つの主権が揺らぐ瞬間を描くマクロ政治経済ライン。
+少しずつ AIへ滑り落ちていく時代。
+通貨・鉱物資源・エネルギー。
+3つの主権が揺らぐ瞬間を描くマクロ政治経済ライン。
 </span>
           </li>
           <li>
@@ -2319,7 +2320,7 @@ Sensing hesitation in the pilot’s movements, Ryo continues to argue “Do not 
               class="ep-title link-arrow"
               data-lang-block="en"
             >
-              	 Episode 3: White Lights in the Hangar — Lt. Col. Minato and the R-17
+                       Episode 3: White Lights in the Hangar — Lt. Col. Minato and the R-17
             </a>
             <div class="ep-meta" data-lang-block="ja">
               <span>🎬 基地の片隅、古い格納庫で試験中の防空戦闘機 R-17。技術中佐ミナトは、R-17の「自律飛行補正システム」に最後の調整を加えている。R-17は、本来は“誤射を減らすための機体”として、AIによる識別と回避行動を組み込まれていた。しかし予算と政治的思惑から、その機能の多くは封印されかけている。ミナトはエンジン音とモニターの数値を見つめながら、「この機体があれば、あの故障機を誰も撃たずに済むのに」と歯噛みする。</span>
@@ -2330,7 +2331,7 @@ R-17 was originally designed to reduce accidental engagements, integrating AI-ba
 Yet political pressure and budget constraints have placed many of these functions on the verge of being sealed away.
 Listening to the engine’s tone and watching the data streams, Minato clenches his jaw.
 “If this aircraft were allowed to fly as intended, no one would have to shoot that reconnaissance plane.” </span>
-
+ 
           </li>
           <li>
             <span class="badge">【黎明シリーズ外伝：R-17】④</span>
@@ -2351,7 +2352,7 @@ Listening to the engine’s tone and watching the data streams, Minato clenches 
               data-lang-block="en"
             >
               Episode 4: The Enemy Base Hangar and the Pilot’s Night
-
+ 
             </a>
             <div class="ep-meta" data-lang-block="ja">
              <span>🎬 一方、対岸の国の基地。そこでも同じように、暗い格納庫で戦闘機が整備され、若いパイロットが出撃命令を待っている。彼は、画面越しにしか見たことのない「敵国の海岸線」を思い浮かべながら、自分がもし故障したとき、相手国は自分をどう扱うのかを考える。作戦会議室では強硬派の将官たちが「故障機であろうと領空侵犯は撃ち落とすべきだ」と声を荒らげるが、現場の整備士たちは皆、かつての事故や仲間の死を思い出し、言葉を飲み込む。</span> 
@@ -2385,7 +2386,7 @@ But mechanics and ground crew—haunted by past accidents and lost comrades—re
             </a>
             <div class="ep-meta" data-lang-block="ja">
               <span>🎬 故障機をめぐる対峙は夜を越え、両国のレーダー画面には「ギリギリ引き返せるライン」が描かれる。公式な外交チャンネルは硬直したままだが、実は水面下で、情報士官同士の非公式な通信が始まっていた。「そちらの機体を救難扱いにする代わりに、今回はお互い撃たないで引き上げないか」。誰も表に出さない、“見えない交渉”が、戦端を開くか防ぐかの分かれ目となる。</span>
-
+ 
             </div>
             <div class="ep-meta" data-lang-block="en">
               <span>📺 The standoff extends into morning.
@@ -2457,7 +2458,7 @@ The pilot senses the presence of someone—unseen—who chose not to fire.
 The official report records only: “Equipment malfunction.”
 But the experience lingers, eventually passed down as quiet lore among younger pilots.</span>
           </li>
-
+ 
           <li>
             <span class="badge">【黎明シリーズ外伝：R-17】⑧</span>
             <a
@@ -2490,7 +2491,7 @@ Years later, it becomes a silent origin story behind the AI Vice-Minister’s de
 “Decisions that maximize survival probability beyond enemy distinctions.”</span>
             </div>
           </li>
-
+ 
           <li>
             <span class="badge">🌅 Guide</span>
             <div class="ep-meta" data-lang-block="ja">
@@ -2500,15 +2501,15 @@ Years later, it becomes a silent origin story behind the AI Vice-Minister’s de
               <span>0. Test Flight — The Experiment of the “Non-Deciding AI”</span>
             </div>
             <a href="https://note.com/modern_owl1687/n/n1f4ce78f7b1f"
-              target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja" >
+              target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja" >
               🎬 LUX-01 の“憲法”を作っていく思想ライン
             </a>
             <a href="https://note.com/modern_owl1687/n/n3a5e0e3304f7"
-              target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en" >	
+              target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en" >        
               📺 [Guide] The Dawn Series — How to Read
             </a>
           </li>
-<!--Guide ★📺   ★🎬  The philosophical line in which LUX-01’s “constitution” is created   -->
+<!--Guide ★📺   ★🎬 The philosophical line in which LUX-01’s “constitution” is created   -->
         </ul>
         <ul class="list">
           <li>
@@ -2520,17 +2521,17 @@ Years later, it becomes a silent origin story behind the AI Vice-Minister’s de
               <span>Part 1: Test Flight</span>
             </div>
             <a href="https://note.com/modern_owl1687/n/nda2183e72360"
-              target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja"
+              target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja"
             >
              🎬 一人のパイロットから始まる、決めないAIの実地実験 
             </a>
             <a href="https://note.com/modern_owl1687/n/n2603bdd773d3"
-              target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en"
-            >	
+              target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en"
+            >        
               📺 A real cockpit test where a “non-deciding AI” begins with one pilot. 
             </a>
           </li>
-<!--C-1 ★🎬 一人のパイロットから始まる「決めないAI」の実験  ★📺 An Experiment in “Undecidable AI”: Beginning with a Single Pilot  -->
+<!--C-1 ★🎬 一人のパイロットから始まる「決めないAI」の実験  ★📺 An Experiment in “Undecidable AI”: Beginning with a Single Pilot -->
           <li>
             <span class="badge">C-2</span>
             <div class="ep-meta" data-lang-block="ja">
@@ -2540,12 +2541,12 @@ Years later, it becomes a silent origin story behind the AI Vice-Minister’s de
               <span>Part 2: Design Notebook, Crossing the Sea</span>
             </div>
             <a href="https://note.com/modern_owl1687/n/n4bf0499547ef"
-              target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja" >
+              target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja" >
              🎬 国際拡散編
             </a>
             <a href="https://note.com/modern_owl1687/n/nf848688309ab"
-              target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en" >	
-	    📺 AI Deputy Minister: Prologue – The Night Before LUX-01
+              target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en" >        
+    📺 AI Deputy Minister: Prologue – The Night Before LUX-01
             </a>
           </li>
 <!--C-2 ★🎬 国際拡散編  ★📺 International Dissemination -->          <li>
@@ -2557,11 +2558,11 @@ Years later, it becomes a silent origin story behind the AI Vice-Minister’s de
               <span>Session 3: Charter of Shaking</span>
             </div>
             <a href="https://note.com/modern_owl1687/n/nec1ecace3130" 
-              target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja" >
+              target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja" >
                AI副大臣 設計会議 Session 3
             </a>
             <a href="https://note.com/modern_owl1687/n/na95ebbe79443"
-              target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en" >
+              target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en" >
               Deputy Minister of AI Design Council Session 3      
             </a>
           </li>
@@ -2575,12 +2576,12 @@ Years later, it becomes a silent origin story behind the AI Vice-Minister’s de
               <span>4. Crossroads in the ER</span>
             </div>
             <a href="#"
-              target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja"
+              target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja"
             >
             
             </a>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en"
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en"
             >
             
             </a>
@@ -2595,12 +2596,12 @@ Years later, it becomes a silent origin story behind the AI Vice-Minister’s de
               <span>5. Noise at the Polling Station</span>
             </div>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja"
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja"
             >
               
             </a>
             <a href="#"
-              	target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en"
+                      target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en"
             >
              
             </a>
@@ -2615,20 +2616,20 @@ Years later, it becomes a silent origin story behind the AI Vice-Minister’s de
               <span>6. Beyond the Blank Page</span>
             </div>
             <a href="#" 
-		target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="ja" >
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja" >
              
             </a>
             <a href="#"
-              	target="_blank" rel="noopener" class="ep-title link-arrow" data-lang-block="en" >
+                      target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en" >
              
             </a>
           </li>
 <!--C-6 ★🎬 ポスト副大臣期・第六章「共在の規範」  ★📺 Post-Vice-Minister Era, Chapter Six “Norms of Co-Existence” -->
         </ul>
-
+ 
         <ul class="list">
           <li>
-
+ 
       <!-- 右カラム：黎明シリーズなど -->
       <section class="section">
         <div class="pill" data-lang-block="ja">
@@ -2662,7 +2663,7 @@ Years later, it becomes a silent origin story behind the AI Vice-Minister’s de
               <span>🎬 助言型AI「副大臣AI」が生まれる必然と、その初期条件を描く導入章。（第１回作品）</span>
             </div>
           </li>
-
+ 
           <li>
             <span class="badge">E-1</span>
             <a
@@ -2683,8 +2684,8 @@ Years later, it becomes a silent origin story behind the AI Vice-Minister’s de
             >
               📘 The Dawn Genome Episode 1: The Oath at Dawn
             </a>
-<!--   E-1  	• JP：第3巻の起点として、世界観の焦点と主要テーマを立ち上げる回。
-	• EN：The first installment of Volume III, establishing the new focus and core themes.   -->
+<!--   E-1          • JP：第3巻の起点として、世界観の焦点と主要テーマを立ち上げる回。
+• EN：The first installment of Volume III, establishing the new focus and core themes.   -->
             <div class="ep-meta" data-lang-block="ja">
               <span>🎬 第3巻の起点として、世界観の焦点と主要テーマを立ち上げる回。</span>
             </div>
@@ -2714,8 +2715,8 @@ Years later, it becomes a silent origin story behind the AI Vice-Minister’s de
             >
               📘 The Dawn Series — Volume III, Episode 2　Currency, Resource, and Energy Sovereignty
             </a>
-<!--   E-2  	• JP：制度・現場・感情が交差し始め、物語が「運用フェーズ」へ進む回。
-	• EN：Where systems, frontline reality, and human emotion begin to collide—pushing the story into an “operational phase.” -->
+<!--   E-2          • JP：制度・現場・感情が交差し始め、物語が「運用フェーズ」へ進む回。
+• EN：Where systems, frontline reality, and human emotion begin to collide—pushing the story into an “operational phase.” -->
             <div class="ep-meta" data-lang-block="ja">
               <span>🎬 制度・現場・感情が交差し始め、物語が「運用フェーズ」へ進む回。</span>
             </div>
@@ -2743,8 +2744,8 @@ Years later, it becomes a silent origin story behind the AI Vice-Minister’s de
             >
               📘 The Dawn Series — Volume III, Episode 3 　　Currency, Resources, and Energy Sovereignty
             </a>
-<!--  E-3  	• JP：判断の境界線と代償が具体化し、緊張が一段上がる転換回。
-	• EN：A turning point where decision boundaries and their costs become concrete, raising the stakes. -->
+<!--  E-3          • JP：判断の境界線と代償が具体化し、緊張が一段上がる転換回。
+• EN：A turning point where decision boundaries and their costs become concrete, raising the stakes. -->
             <div class="ep-meta" data-lang-block="ja">
               <span>🎬 判断の境界線と代償が具体化し、緊張が一段上がる転換回。</span>
             </div>
@@ -2763,8 +2764,8 @@ Years later, it becomes a silent origin story behind the AI Vice-Minister’s de
             >
              黎明シリーズ第3巻 ― 完結編：黎明の遺伝（The Dawn Genome）
             </a>
-<!--  E-4  	• JP：第3巻の総決算として、受け継がれる理念と未来への継承を回収する完結編。
-	• EN：The conclusion of Volume III, tying together the inherited ideals and what they pass on to the future (“The Dawn Genome”).   -->
+<!--  E-4          • JP：第3巻の総決算として、受け継がれる理念と未来への継承を回収する完結編。
+• EN：The conclusion of Volume III, tying together the inherited ideals and what they pass on to the future (“The Dawn Genome”).   -->
             <div class="ep-meta" data-lang-block="ja">
               <span>🎬 第3巻の総決算として、受け継がれる理念と未来への継承を回収する完結編。</span>
             </div>
@@ -2789,8 +2790,8 @@ Years later, it becomes a silent origin story behind the AI Vice-Minister’s de
             >
               📘 The Rule of Dawn 
             </a>
-<!--  E-6  	• JP：量子社会前夜まで射程を広げ、設定・概念を再整理した改訂版。
-	• EN：A revised edition that expands the scope toward the pre-quantum era, reorganizing key concepts and settings. -->
+<!--  E-6          • JP：量子社会前夜まで射程を広げ、設定・概念を再整理した改訂版。
+• EN：A revised edition that expands the scope toward the pre-quantum era, reorganizing key concepts and settings. -->
             <div class="ep-meta" data-lang-block="ja">
               <span>🎬 量子社会前夜まで射程を広げ、設定・概念を再整理した改訂版。</span>
             </div>
@@ -2798,7 +2799,7 @@ Years later, it becomes a silent origin story behind the AI Vice-Minister’s de
               <span>📺 A revised edition that expands the scope toward the pre-quantum era, reorganizing key concepts and settings. </span>
             </div>
           </li>
-
+ 
           <li>
             <span class="badge">E-7</span>
             <a
@@ -2810,8 +2811,8 @@ Years later, it becomes a silent origin story behind the AI Vice-Minister’s de
             >
               📘 #AIと政治
             </a>
-<!--  E-7  	• JP：AIが政治に関与する際の論点（権限・責任・抑制）をまとめるタグ枠。
-	• EN：A tag hub for the key questions of AI in politics—authority, accountability, and restraint. -->
+<!--  E-7          • JP：AIが政治に関与する際の論点（権限・責任・抑制）をまとめるタグ枠。
+• EN：A tag hub for the key questions of AI in politics—authority, accountability, and restraint. -->
             <div class="ep-meta" data-lang-block="ja">
               <span>🎬 AIが政治に関与する際の論点（権限・責任・抑制）をまとめるタグ枠。</span>
             </div>
@@ -2827,8 +2828,8 @@ Years later, it becomes a silent origin story behind the AI Vice-Minister’s de
             >
               📘 #AI副大臣
             </a>
-<!--  E-8  	• JP：副大臣AIの役割・限界・運用思想を追えるテーマ別まとめ。
-	• EN：A thematic hub tracking the Vice-Minister AI’s role, limits, and operating philosophy.  -->
+<!--  E-8          • JP：副大臣AIの役割・限界・運用思想を追えるテーマ別まとめ。
+• EN：A thematic hub tracking the Vice-Minister AI’s role, limits, and operating philosophy.  -->
             <div class="ep-meta" data-lang-block="ja">
               <span>🎬 副大臣AIの役割・限界・運用思想を追えるテーマ別まとめ。</span>
             </div>
@@ -2844,8 +2845,8 @@ Years later, it becomes a silent origin story behind the AI Vice-Minister’s de
             >
               📘 #ChatGPT共著｜『黎明ルール』スピンオフ
             </a>
-<!--  E-9  	• JP：『黎明のルール』世界の枝葉を広げるスピンオフ群（共著企画）。
-	• EN：Co-authored spin-offs that expand the Dawn Rules universe through side threads and variations.   -->
+<!--  E-9          • JP：『黎明のルール』世界の枝葉を広げるスピンオフ群（共著企画）。
+• EN：Co-authored spin-offs that expand the Dawn Rules universe through side threads and variations.   -->
             <a
               href="https://note.com/modern_owl1687/n/n963b4987760f"
               target="_blank"
@@ -2861,48 +2862,87 @@ Years later, it becomes a silent origin story behind the AI Vice-Minister’s de
             <div class="ep-meta" data-lang-block="en">
               <span>📺 Co-authored spin-offs that expand the Dawn Rules universe through side threads and variations.  </span>
             </div>
-
+ 
           </li>
-
+ 
       </ul>
       </section>
     </main>
-
+ 
     <footer>
       <div data-lang-block="ja">
         Hosted on GitHub Pages ／ 作品本文は
-        <a href="#"_blank" rel="noopener"
+        <a href="#"target=“_blank” rel=“noopener noreferrer”
           >note（machin530）</a
         >
         にて連載中。黎明シリーズ外伝：R-17】④
       </div>
       <div data-lang-block="en">
         Hosted on GitHub Pages. Main stories are serialized on
-        <a href="#"_blank" rel="noopener"
+        <a href="#"target=“_blank” rel=“noopener noreferrer”
           >note (machin530)</a
         >
       </div>
     </footer>
   </div>
-
-  <script>
-    (function () {
-      const body = document.body;
-      const btns = document.querySelectorAll("[data-lang-btn]");
-
-      btns.forEach((btn) => {
-        btn.addEventListener("click", () => {
-          const lang = btn.getAttribute("data-lang-btn");
-          if (lang === "ja") {
-            body.classList.remove("lang-en");
-          } else {
-            body.classList.add("lang-en");
-          }
-          btns.forEach((b) => b.classList.remove("active"));
-          btn.classList.add("active");
-        });
-      });
-    })();
-  </script>
+ 
+ 
+<script>
+  (function () {
+    const body = document.body;
+    const btnJa = document.querySelector('[data-lang-btn="ja"]');
+    const btnEn = document.querySelector('[data-lang-btn="en"]');
+function setLang(lang) {
+      if (lang === "en") {
+        body.classList.add("lang-en");
+        body.classList.remove("lang-ja");
+        btnEn.classList.add("active");
+        btnJa.classList.remove("active");
+        btnEn.setAttribute("aria-pressed", "true");
+        btnJa.setAttribute("aria-pressed", "false");
+      } else {
+        body.classList.add("lang-ja");
+        body.classList.remove("lang-en");
+        btnJa.classList.add("active");
+        btnEn.classList.remove("active");
+        btnJa.setAttribute("aria-pressed", "true");
+        btnEn.setAttribute("aria-pressed", "false");
+      }
+    }
+btnJa.addEventListener("click", () => setLang("ja"));
+    btnEn.addEventListener("click", () => setLang("en"));
+// 初期状態を保証
+    setLang(body.classList.contains("lang-en") ? "en" : "ja");
+  })();
+</script>
 </body>
 </html>
+
+<script>
+  (function () {
+    const body = document.body;
+    const btnJa = document.querySelector('[data-lang-btn="ja"]');
+    const btnEn = document.querySelector('[data-lang-btn="en"]');
+function setLang(lang) {
+      if (lang === "en") {
+        body.classList.add("lang-en");
+        body.classList.remove("lang-ja");
+        btnEn.classList.add("active");
+        btnJa.classList.remove("active");
+        btnEn.setAttribute("aria-pressed", "true");
+        btnJa.setAttribute("aria-pressed", "false");
+      } else {
+        body.classList.add("lang-ja");
+        body.classList.remove("lang-en");
+        btnJa.classList.add("active");
+        btnEn.classList.remove("active");
+        btnJa.setAttribute("aria-pressed", "true");
+        btnEn.setAttribute("aria-pressed", "false");
+      }
+    }
+btnJa.addEventListener("click", () => setLang("ja"));
+    btnEn.addEventListener("click", () => setLang("en"));
+// 初期状態を保証
+    setLang(body.classList.contains("lang-en") ? "en" : "ja");
+  })();
+</script>
