@@ -1,0 +1,2919 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hikari no Kusuri & Dawn Series Portal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="朝ドラ『ひかりのくすり』と『黎明シリーズ外伝』への公式リンクポータルです。Hikari no Kusuri & Dawn Series official link hub."
+  />
+  <style>
+    :root {
+      --bg: #050816;
+      --bg-soft: #0f172a;
+      --card: #0b1120;
+      --accent: #38bdf8;
+      --accent-soft: rgba(56, 189, 248, 0.15);
+      --text-main: #e5e7eb;
+      --text-sub: #9ca3af;
+      --border-soft: #1f2937;
+      --radius-lg: 18px;
+      --radius-pill: 999px;
+    }
+ 
+    * {
+      box-sizing: border-box;
+    }
+ 
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        sans-serif;
+      background: radial-gradient(circle at top, #0f172a 0, #020617 55%, #000 100%);
+      color: var(--text-main);
+      line-height: 1.6;
+    }
+ 
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+ 
+    a:hover {
+      text-decoration: underline;
+    }
+ 
+    .page {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 24px 16px 40px;
+    }
+ 
+    header {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      padding: 18px 20px;
+      border-radius: 22px;
+      background: linear-gradient(
+          135deg,
+          rgba(56, 189, 248, 0.14),
+          rgba(129, 140, 248, 0.08)
+        ),
+        radial-gradient(circle at top left, #0f172a, #020617);
+      border: 1px solid rgba(148, 163, 184, 0.35);
+      box-shadow:
+        0 18px 45px rgba(15, 23, 42, 0.9),
+        0 0 0 1px rgba(15, 23, 42, 0.7);
+    }
+ 
+    .title-main {
+      font-size: clamp(1.7rem, 2.4vw + 0.8rem, 2.1rem);
+      font-weight: 700;
+      letter-spacing: 0.05em;
+    }
+ 
+    .title-main span {
+      color: var(--accent);
+    }
+ 
+    .title-sub {
+      font-size: 0.95rem;
+      color: var(--text-sub);
+      max-width: 720px;
+    }
+ 
+    .header-bottom {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+      justify-content: space-between;
+    }
+ 
+    .lang-switch {
+      display: inline-flex;
+      padding: 4px;
+      border-radius: var(--radius-pill);
+      background: rgba(15, 23, 42, 0.85);
+      border: 1px solid rgba(148, 163, 184, 0.5);
+    }
+ 
+    .lang-btn {
+      border: none;
+      padding: 6px 14px;
+      border-radius: calc(var(--radius-pill) - 2px);
+      font-size: 0.8rem;
+      background: transparent;
+      color: var(--text-sub);
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+ 
+    .lang-btn.active {
+      background: var(--accent);
+      color: #020617;
+      font-weight: 600;
+    }
+ 
+    .tagline {
+      font-size: 0.8rem;
+      color: var(--text-sub);
+      padding: 4px 10px;
+      border-radius: var(--radius-pill);
+      border: 1px solid rgba(148, 163, 184, 0.4);
+      background: rgba(15, 23, 42, 0.65);
+      white-space: nowrap;
+    }
+ 
+    main {
+      margin-top: 24px;
+      display: grid;
+      grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+      gap: 18px;
+    }
+ 
+    @media (max-width: 880px) {
+      main {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+ 
+    .section {
+      background: linear-gradient(
+        135deg,
+        rgba(15, 23, 42, 0.95),
+        rgba(15, 23, 42, 0.96)
+      );
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border-soft);
+      padding: 18px 18px 16px;
+      box-shadow: 0 12px 30px rgba(15, 23, 42, 0.8);
+    }
+ 
+    .section:nth-child(1) {
+      background: linear-gradient(
+        135deg,
+        rgba(56, 189, 248, 0.09),
+        rgba(15, 23, 42, 0.97)
+      );
+    }
+ 
+    .section h2 {
+      margin: 0 0 4px;
+      font-size: 1.05rem;
+      letter-spacing: 0.03em;
+    }
+ 
+    .section p.lead {
+      margin: 0 0 12px;
+      font-size: 0.85rem;
+      color: var(--text-sub);
+    }
+ 
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.75rem;
+      padding: 4px 10px;
+      border-radius: var(--radius-pill);
+      background: var(--accent-soft);
+      color: var(--accent);
+      margin-bottom: 10px;
+    }
+ 
+    .badge {
+      display: inline-block;
+      padding: 2px 6px;
+      border-radius: 999px;
+      font-size: 0.68rem;
+      background: rgba(15, 23, 42, 0.9);
+      border: 1px solid rgba(148, 163, 184, 0.4);
+      color: var(--text-sub);
+      margin-right: 6px;
+    }
+ 
+    .list {
+      list-style: none;
+      margin: 6px 0 0;
+      padding: 0;
+      font-size: 0.85rem;
+    }
+ 
+    .list li {
+      padding: 5px 0;
+      border-bottom: 1px dashed rgba(31, 41, 55, 0.7);
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+ 
+    .list li:last-child {
+      border-bottom: none;
+    }
+ 
+    .ep-title {
+      font-weight: 500;
+    }
+ 
+    .ep-meta {
+      font-size: 0.72rem;
+      color: var(--text-sub);
+    }
+ 
+    .ep-meta span {
+      margin-right: 8px;
+    }
+ 
+    .link-arrow::after {
+      content: "↗";
+      font-size: 0.75em;
+      margin-left: 4px;
+    }
+ 
+    .section-small {
+      margin-top: 14px;
+      padding-top: 12px;
+      border-top: 1px dashed rgba(55, 65, 81, 0.8);
+    }
+ 
+    footer {
+      margin-top: 24px;
+      font-size: 0.75rem;
+      color: var(--text-sub);
+      text-align: center;
+    }
+ 
+    footer a {
+      font-size: 0.75rem;
+    }
+ 
+    /* language visibility */
+    [data-lang-block="ja"] {
+      display: block;
+    }
+ 
+    [data-lang-block="en"] {
+      display: none;
+    }
+ 
+    .lang-en [data-lang-block="ja"] {
+      display: none;
+    }
+ 
+    .lang-en [data-lang-block="en"] {
+      display: block;
+    }
+  </style>
+</head>
+<body class="lang-ja">
+  <div class="page">
+    <header>
+      <div>
+        <div class="title-main" data-lang-block="ja">
+          朝ドラ『ひかりのくすり』&nbsp;<span>＋ 黎明シリーズ外伝</span>
+        </div>
+        <div class="title-main" data-lang-block="en">
+          <span>Hikari no Kusuri</span> & Dawn Series Side Stories
+        </div>
+ 
+        <p class="title-sub" data-lang-block="ja">
+          港町「みなと野」を舞台にした朝ドラ風フィクション
+          『ひかりのくすり』と、同じ世界線に連なる
+          『AI副大臣：黎明のルール』外伝（通貨・資源・エネルギー・教育など）
+          への公式リンクポータルです。
+        </p>
+        <p class="title-sub" data-lang-block="en">
+          This is the official link hub for the morning-drama style fiction
+          <strong>“Hikari no Kusuri”</strong> set in the harbor town Minato-no,
+          and the connected near-future universe of
+          <strong>“AI Deputy Minister: Rules of Dawn”</strong> side stories
+          (currency, resources, energy, education, etc.).
+        </p>
+      </div>
+ 
+      <div class="header-bottom">
+        <div class="lang-switch" aria-label="Language switch">
+          <button class="lang-btn active" data-lang-btn="ja">日本語</button>
+          <button class="lang-btn" data-lang-btn="en">English</button>
+        </div>
+        <div class="tagline" data-lang-block="ja">
+          note連載への入口 / Entry portal for your note series
+        </div>
+        <div class="tagline" data-lang-block="en">
+          Central gateway to all related note articles
+        </div>
+      </div>
+    </header>
+ 
+    <main>
+      <!-- 左カラム：ひかりのくすり -->
+      <section class="section">
+        <div class="pill" data-lang-block="ja">
+          🎬 朝ドラシリーズ入口
+        </div>
+        <div class="pill" data-lang-block="en">
+          🎬 Morning drama main series
+        </div>
+ 
+        <h2 data-lang-block="ja">朝ドラ『ひかりのくすり』本編リンク</h2>
+        <h2 data-lang-block="en">“Hikari no Kusuri” Main Episodes</h2>
+ 
+        <p class="lead" data-lang-block="ja">
+          まずは「第0話：解説・読み方ガイド」からお読みいただくと、
+          世界観・登場人物・読み方のコツがつかみやすくなります。
+        </p>
+        <p class="lead" data-lang-block="en">
+          We recommend starting from “Episode 0: Guide & How to Read” to
+          quickly grasp the setting, characters, and reading style.
+        </p>
+ 
+        <ul class="list">
+          <!-- ★ 第0話（読み方ガイド） -->
+          <li>
+            <span class="badge">🌅 EP 0</span>
+            <div class="ep-meta" data-lang-block="ja">
+              <span> 第0話：『ひかりのくすり』解説・読み方ガイド</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>Episode 0: “Hikari no Kusuri” – Guide & How to Read</span
+              ><span>👁 Overview & reading guide</span>
+            </div>
+            <a
+              class="ep-title link-arrow"
+              href="https://note.com/modern_owl1687/n/n4a58cf2d30bd"
+              target="_blank"
+              rel="noopener"
+              data-lang-block="ja"
+            >
+             📍 港町みなと野  👁 作品全体の入口
+            </a>
+            <a
+              class="ep-title link-arrow"
+              href="https://note.com/modern_owl1687/n/n1c1c0bb3883b"
+              target="_blank"
+              rel="noopener"
+              data-lang-block="en"
+            >
+              📍 Minato-no Harbor Town
+            </a>
+          </li>
+<!--0 ★  ★  -->
+          <li>
+            <span class="badge">EP 1</span>
+            <div class="ep-meta" data-lang-block="ja">
+              <span>朝ドラ『ひかりのくすり』第1話</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>Morning Drama "Hikari no Kusuri" Episode 1</span>
+            </div>
+            <a href="https://note.com/modern_owl1687/n/n22dbab5a687a" target="_blank" 
+rel="noopener" class="ep-title link-arrow" data-lang-block="ja">
+             🎬  第 1話「港町の薬屋の息子」 
+            </a>
+            <a href="https://note.com/modern_owl1687/n/nb6cf00a43156" target="_blank" 
+rel="noopener" class="ep-title link-arrow" data-lang-block="en">
+             📺 Episode 1: "The Apothecary Son in a Port City" ↗ 
+            </a>
+         </li>
+<!--1 ★  ★  -->
+          <li>
+            <span class="badge">EP 2</span>
+            <div class="ep-meta" data-lang-block="ja">
+              <span>朝ドラ『ひかりのくすり』第2話 </span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>Morning Drama "Hikari no Kusuri" Episode 2</span>
+            </div>
+            <a href="https://note.com/modern_owl1687/n/n6bf052b6dacd" 
+target="_blank" rel=" class="ep-title link-arrow" data-lang-block="ja">
+              🎬 第 2話「対症療法の現場へ」 
+            </a>
+            <a href="https://note.com/modern_owl1687/n/n1cec46283d20" 
+target="_blank" rel=" class="ep-title link-arrow" data-lang-block="en">
+              📺  Episode 2: "To the Scene of Symptomatic Treatment" 
+            </a>
+          </li>
+<!--2 ★  ★  -->
+          <li>
+            <span class="badge">EP 3</span>
+            <div class="ep-meta" data-lang-block="ja">
+              <span> 朝ドラ『ひかりのくすり』第3話</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span> Morning Drama "Hikari no Kusuri" Episode 3</span>
+            </div>
+            <a href="https://note.com/modern_owl1687/n/n475c2b852dd0" 
+target="_blank" rel=" class="ep-title link-arrow" data-lang-block="ja">
+             🎬 第 3話「進路希望、記入欄はひとつだけ」 
+            </a>
+            <a href="https://note.com/modern_owl1687/n/ndc81d95d0c32" 
+target="_blank" rel=" class="ep-title link-arrow" data-lang-block="en">
+             📺 Episode 3: "Career Hope, Only One Field" 
+            </a>
+          </li>
+<!--3 ★  ★  -->
+          <li>
+            <span class="badge">EP 4</span>
+             <div class="ep-meta" data-lang-block="ja">
+              <span>朝ドラ『ひかりのくすり』第4話</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>Morning Drama "Hikari no Kusuri" Episode 4</span>            
+            </div>
+            <a href="https://note.com/modern_owl1687/n/n5c03638474ce" 
+target="_blank" rel=" class="ep-title link-arrow" data-lang-block="ja">
+              🎬  第 4話「E判定と、港のベンチ」 
+            </a>
+            <a href="https://note.com/modern_owl1687/n/n82540ee13792" 
+target="_blank" rel="noopener class="ep-title link-arrow" data-lang-block="en">
+              📺 Episode 4: "E Judgment and Port Bench" 
+            </a>
+         </li>
+<!--4 ★  ★  -->
+          <li>
+            <span class="badge">EP 5-1</span>
+            <div class="ep-meta" data-lang-block="ja">
+              <span>朝ドラ『ひかりのくすり』 第5話 その１</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>Morning Drama "Hikari no Kusuri" Episode 5 Paret 1</span>
+            </div>
+            <a href="https://note.com/modern_owl1687/n/ne7af9cd3e48a" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
+             🎬 第 5話 その１「不合格通知と、もう一度の春」 
+            </a>
+            <a href="https://note.com/modern_owl1687/n/n5cab942f3b7e" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
+              📺  Episode 5 Part 1: Top "Rejection Notice and Another Spring" 
+            </a>
+          </li>
+<!--5-1 ★  ★  -->
+          <li>
+            <span class="badge">EP 5-2</span>
+            <div class="ep-meta" data-lang-block="ja">
+              <span>朝ドラ『ひかりのくすり』第5話 その２</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>Morning Drama "Hikari no Kusuri" Episode 5 Part 2</span>
+            </div>
+            <a href="https://note.com/modern_owl1687/n/n3fa7a9230196" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
+              🎬  第 5話 その２「受験番号は、もう間違えない」 
+            </a>
+            <a href="https://note.com/modern_owl1687/n/n792994a159ed" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
+              📺  Episode 5 Part 2: Bottom "Don't Make a Mistake About the Exam Number Anymore" 
+            </a>
+          </li>
+<!--5-2 ★  ★  -->
+          <li>
+            <span class="badge">EP 6</span>
+            <div class="ep-meta" data-lang-block="ja">
+              <span>朝ドラ『ひかりのくすり』第6話</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>Morning Drama "Hikari no Kusuri" Episode 6</span>
+            </div>
+            <a href="https://note.com/modern_owl1687/n/n9fc92692ea75" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
+              🎬 第 6話「白衣の海と、ひとり分の初心」 
+            </a>
+            <a href="https://note.com/modern_owl1687/n/na64a73e7ab40" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
+              📺 Episode 6: "The Sea of White Coat and One Person's Original Intention" 
+            </a>
+          </li>
+<!--6 ★  ★  -->
+          <li>
+            <span class="badge">EP 7</span>
+            <div class="ep-meta" data-lang-block="ja">
+              <span>朝ドラ『ひかりのくすり』 第7話</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>Morning Drama "Hikari no Kusuri" Episode 7</span>
+            </div>
+            <a href="https://note.com/modern_owl1687/n/nfe092707c0ef" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
+             🎬  第 7話「医学部という“白衣の海”―カルチャーショックは止まらない」
+            </a>
+            <a href="https://note.com/modern_owl1687/n/nfa434ed6db94" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
+              📺 Episode 7: "The "Sea of White Coats" of Medical School - Culture Shock Never Stops" 
+            </a>
+          </li>
+<!-- ★  ★  -->
+          <li>
+            <span class="badge">EP 8</span>
+            <div class="ep-meta" data-lang-block="ja">
+              <span>朝ドラ『ひかりのくすり』第8話</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>Morning Drama "Hikari no Kusuri" Episode 8</span>
+            </div>
+            <a href="https://note.com/modern_owl1687/n/n2f64959148af" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
+              🎬  第 8話「対症療法から完治へ —— 准教授との出会い」 
+            </a>
+            <a href="https://note.com/modern_owl1687/n/n36e782817e3c" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
+              📺 Episode 8: "From Symptomatic Treatment to Complete Cure: Meeting with an Associate Professor" 
+            </a>
+          </li>
+<!--8 ★  ★  -->
+          <li>
+            <span class="badge">EP 9</span>
+            <div class="ep-meta" data-lang-block="ja">
+              <span>朝ドラ 『ひかりのくすり』第9話</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>Morning Drama "Hikari no Kusuri" Episode 9</span>
+            </div>
+            <a href="https://note.com/modern_owl1687/n/naff3f990b68d" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
+             🎬 第 9話「ラボのドアをノックする日」 
+            </a>
+            <a href="https://note.com/modern_owl1687/n/nad91b0c7b569" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
+              📺 Episode 9: "The Day I Knocked on the Lab Door" 
+            </a>
+          </li>
+<!--9 ★  ★  -->
+          <li>
+            <span class="badge">EP 10</span>
+             <div class="ep-meta" data-lang-block="ja">
+              <span>朝ドラ『ひかりのくすり』 第10話</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>Morning Drama "Hikari no Kusuri" Episode 10</span>
+            </div>
+            <a href="https://note.com/modern_owl1687/n/n586ccbec1e06" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
+             🎬 第10話「細胞が全部死んだ夜」 
+            </a>
+            <a href="https://note.com/modern_owl1687/n/ne719c7bf72fe" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
+              📺 Episode 10: The Night All the Cells Died 
+            </a>
+          </li>
+<!--10 ★  ★  -->
+          <li>
+            <span class="badge">EP 11</span>
+             <div class="ep-meta" data-lang-block="ja">
+              <span>朝ドラ『ひかりのくすり』 第11話</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>Morning Drama "Hikari no Kusuri" Episode 11</span>
+            </div>
+            <a href="https://note.com/modern_owl1687/n/ne4b02000dde6" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
+             🎬 第11話「今日を守る手のぬくもり」 
+            </a>
+            <a href="https://note.com/modern_owl1687/n/n8f39ef692238" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
+              🎬 Episode 11: "The Warmth of the Hand to Protect Today" 
+            </a>
+          </li>
+<!--11 ★  ★  -->
+ 
+          <li>
+            <span class="badge">EP 12</span>
+            <div class="ep-meta" data-lang-block="ja">
+              <span>朝ドラ『ひかりのくすり』第12話 </span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>Morning Drama "Hikari no Kusuri" Episode 12</span>
+            </div>
+            <a href="https://note.com/modern_owl1687/n/ne81c184cb629" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
+              🎬 第12話「生きるか死ぬかの夜」  
+            </a>
+            <a href="https://note.com/modern_owl1687/n/ncce6fdc35492" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
+              🎬 Episode 12: "The Night of Life or Death" 
+            </a>
+          </li>
+<!--12 ★  ★  -->
+          <li>
+            <span class="badge">EP 13</span>
+            <div class="ep-meta" data-lang-block="ja">
+              <span> 朝ドラ『ひかりのくすり』第13話</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span> Morning Drama "Hikari no Kusuri" Episode 13</span>
+            </div>
+            <a href="https://note.com/modern_owl1687/n/nf21266aa3eba" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
+              🎬 第13話「献血の壁と、mRNAの扉」 
+            </a>
+            <a href="https://note.com/modern_owl1687/n/n8954afaedd37" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
+             🎬 Episode 13: "The Blood Donation Wall and the mRNA Door" 
+            </a>
+          </li>
+<!--13 ★  ★  -->
+          <li>
+            <span class="badge">EP 14</span>
+             <div class="ep-meta" data-lang-block="ja">
+              <span>朝ドラ『ひかりのくすり』第14話</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>Morning Drama "Hikari no Kusuri" Episode 14</span>            
+            </div>
+            <a href="https://note.com/modern_owl1687/n/n54e082d54337" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
+              🎬 第14話「カプセルに、明日の医療をつめて」 
+            </a>
+            <a href="https://note.com/modern_owl1687/n/n25228ecaf0a0" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
+              🎬 Episode 14: "Tomorrow's Medical Care in a Capsule" 
+            </a>
+         </li>
+<!--14 ★  ★  -->
+          <li>
+            <span class="badge">EP 15</span>
+            <div class="ep-meta" data-lang-block="ja">
+              <span>朝ドラ『ひかりのくすり』 第15話</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>Morning Drama "Hikari no Kusuri" Episode 15 </span>
+            </div>
+            <a href="https://note.com/modern_owl1687/n/n0bbc36c9a104" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
+             🎬 第15話「リジェクトメールは突然に」
+            </a>
+            <a href="https://note.com/modern_owl1687/n/ncd7af25f97bd" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
+              🎬 Episode 15: "Reject Email Suddenly" 
+            </a>
+          </li>
+<!--15 ★  ★  -->
+          <li>
+            <span class="badge">EP Guide 1</span>
+           <a href="https://note.com/modern_owl1687/n/na73623b2c15d"target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja"> 
+              🌅 朝ドラ『ひかりのくすり』総合リンクポータル
+            </a>
+           <a href="https://note.com/modern_owl1687/n/nf75c4fdcc0d7"target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en"> 
+              🌅 Morning Drama “Hikari no Kusuri” — Climax Guide
+            </a>
+           </li>
+<!-- Guide 1 ★  ★   -->
+          <li>
+            <span class="badge">NY 1</span>
+            <div class="ep-meta" data-lang-block="ja">
+              <span>新春短編 第1話</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span> New Year Short Series Part 1</span>
+            </div>
+           <a href="https://note.com/modern_owl1687/n/n3073409dc508"
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
+              🌅 第1話 『発車まで、あと三十分』
+            </a>
+           <a href="https://note.com/modern_owl1687/n/n54c53faeb82b"
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
+             🌅 A Journey That Continues Part 1 — “Thirty Minutes Until Departure”
+            </a>
+          </li>
+<!-- NY 1  ★  ★   -->
+          <li>
+            <span class="badge">NY 2 </span>
+            <div class="ep-meta" data-lang-block="ja">
+              <span>新春短編 第2話 </span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span> New Year Short Series Part 2 </span>
+            </div>
+           <a href="https://note.com/modern_owl1687/n/n066452f79014"
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
+             🌅 第2話 『同じホーム』
+            </a>
+           <a href="https://note.com/modern_owl1687/n/n3f901b98e4ca"
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
+             🌅 A Journey That Continues Part 2 — “The Same Platform”
+            </a>
+          </li>
+<!-- NY 2  ★  ★   -->
+          <li>
+            <span class="badge">NY 3 </span>
+            <div class="ep-meta" data-lang-block="ja">
+              <span>新春短編 第3話 </span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span> New Year Short Series Part 3 </span>
+            </div>
+           <a href="https://note.com/modern_owl1687/n/nfc3eac6caa75"
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
+              🌅 第3話（最終話） 『次の駅へ』
+            </a>
+           <a href="https://note.com/modern_owl1687/n/n8ca6feb34a82"
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
+             🌅 A Journey That Continues Part 3 — “To the Next Station”
+            </a>
+          </li>
+<!-- NY 3  ★  ★   -->
+          <li>
+            <span class="badge">EP 16 </span>
+            <div class="ep-meta" data-lang-block="ja">
+              <span>朝ドラ『ひかりのくすり』第16話</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>Morning Drama "Hikari no Kusuri" Episode 16</span>
+            </div>
+            <a href="https://note.com/modern_owl1687/n/nc48f5feec308" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
+              🎬 第16話 「ひとつのカプセルが、世界に届いた」 
+            </a>
+            <a href="https://note.com/modern_owl1687/n/nafd63dab698f" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
+              🎬 Episode 16: "A Capsule Reaches the World" 
+            </a>
+          </li>
+<!--16 ★  ★  -->
+          <li>
+            <span class="badge">EP 17 </span>
+            <div class="ep-meta" data-lang-block="ja">
+              <span>朝ドラ『ひかりのくすり』 第17話</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>Morning Drama "Hikari no Kusuri" Episode 17</span>
+            </div>
+            <a href="https://note.com/modern_owl1687/n/n952f86c46d7d" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
+             🎬 第17話「企業から声がかかるベンチャー準備」
+            </a>
+            <a href="https://note.com/modern_owl1687/n/n46f9f8ad44c4" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
+              🎬 Episode 17: "Preparing for a venture called by a company" 
+            </a>
+          </li>
+<!--17 ★  ★  -->
+          <li>
+            <span class="badge">EP 18</span>
+            <div class="ep-meta" data-lang-block="ja">
+              <span>朝ドラ『ひかりのくすり』第18話</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>Morning Drama "Hikari no Kusuri" Episode 18</span>
+            </div>
+            <a href="https://note.com/modern_owl1687/n/ncef390b011aa" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
+              🎬 第18話「誰と組むか」 
+            </a>
+            <a href="https://note.com/modern_owl1687/n/n9b2c02b5f55c" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
+              🎬 Episode 18: Who to Team Up With 
+            </a>
+          </li>
+<!--18 ★  ★  -->
+          <li>
+            <span class="badge">EP 19</span>
+            <div class="ep-meta" data-lang-block="ja">
+              <span>朝ドラ 『ひかりのくすり』第19話</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>Morning Drama "Hikari no Kusuri" Episode 19</span>
+            </div>
+            <a href="https://note.com/modern_owl1687/n/nb11678ceb61a" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
+             🎬 第19話「大学内の調整（知財、教授会、病院側との話し合い）」 
+            </a>
+            <a href="https://note.com/modern_owl1687/n/ne93e3c205417" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
+              🎬 Episode 19: "Coordination within the University (Discussions with Intellectual Property, Faculty Associations, and Hospitals)" 
+            </a>
+          </li>
+<!--19 ★  ★  -->
+          <li>
+            <span class="badge">EP 20</span>
+             <div class="ep-meta" data-lang-block="ja">
+              <span>朝ドラ『ひかりのくすり』 第20話</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>Morning Drama "Hikari no Kusuri" Episode 20</span>
+            </div>
+            <a href="https://note.com/modern_owl1687/n/n5fcd0ac53945" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
+              🎬 第20話「最初のチームミーティング（役割分担と最初のすれ違い）」
+            </a>
+            <a href="https://note.com/modern_owl1687/n/n3667c409ca6e" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
+              🎬 Episode 20: The First Team Meeting
+            </a>
+          </li>
+<!--20 ★🎬 第20話「最初のチームミーティング（役割分担と最初のすれ違い）」  ★🎬 Episode 20: The First Team Meeting (Division of Roles and First Misunderstandings)   -->
+          <li>
+            <span class="badge">EP 21</span>
+             <div class="ep-meta" data-lang-block="ja">
+              <span>朝ドラ『ひかりのくすり』 第21話</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>Morning Drama "Hikari no Kusuri" Episode 21</span>
+            </div>
+            <a href="https://note.com/modern_owl1687/n/n2b2977fe74ea" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
+              🎬 第21話「CEO候補がチラッと登場する」 
+            </a>
+            <a href="https://note.com/modern_owl1687/n/nce092172c236" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
+             🎬 Episode 21: "CEO Candidate Appears Glimpsed"
+            </a>
+          </li>
+<!--21 ★🎬 第21話「CEO候補がチラッと登場する」  ★🎬 Episode 21: "CEO Candidate Appears Glimpsed"  -->
+          <li>
+            <span class="badge">EP 22</span>
+            <div class="ep-meta" data-lang-block="ja">
+              <span>朝ドラ『ひかりのくすり』第22話 </span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>Morning Drama "Hikari no Kusuri" Episode 22</span>
+            </div>
+            <a href="https://note.com/modern_owl1687/n/n4af8e21a1fa0" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
+                🎬 第22話「患者さんへの説明文を作る（一次案→炎上寸前→言い直し）」
+            </a>
+            <a href="https://note.com/modern_owl1687/n/nfb9906206dfe" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
+               🎬 Episode 22: "Making an Explanation for Patients (Restatement →On the Verge → Flames) 
+            </a>
+          </li>
+<!--22 ★🎬 第22話「患者さんへの説明文を作る（一次案→炎上寸前→言い直し）」  ★🎬 Episode 22: "Making an Explanation for Patients (Restatement →On the Verge → Flames)  -->
+          <li>
+            <span class="badge">EP 23</span>
+            <div class="ep-meta" data-lang-block="ja">
+              <span> 朝ドラ『ひかりのくすり』第23話</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span> Morning Drama "Hikari no Kusuri" Episode 23</span>
+            </div>
+            <a href="https://note.com/modern_owl1687/n/n523c50700517" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
+               🎬 第23話「「治験継続か中断かを話し合う“緊急ボードミーティング”」
+            </a>
+            <a href="https://note.com/modern_owl1687/n/na15ee1c0e2fb" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
+             🎬 Episode 23: "Emergency Board Meeting to Discuss Continuation or Suspension of Clinical Trials"
+            </a>
+          </li>
+<!--23 ★🎬 第23話「「治験継続か中断かを話し合う“緊急ボードミーティング”」  ★🎬 Episode 23: "Emergency Board Meeting to Discuss Continuation or Suspension of Clinical Trials"  -->
+          <li>
+            <span class="badge">EP 24</span>
+             <div class="ep-meta" data-lang-block="ja">
+              <span>朝ドラ『ひかりのくすり』第24話</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>Morning Drama "Hikari no Kusuri" Episode 24</span>            
+            </div>
+            <a href="https://note.com/modern_owl1687/n/n746cfcd3e17b" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
+               🎬 第24話「患者サイドの一日（村上さん視点）」
+            </a>
+            <a href="https://note.com/modern_owl1687/n/n1ce43a7c0073" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
+               🎬 Episode 24: "A Day on the Patient's Side (Murakami's Perspective)"
+            </a>
+         </li>
+<!--24 ★🎬 第24話「患者サイドの一日（村上さん視点）」  ★🎬 Episode 24: "A Day on the Patient's Side (Murakami's Perspective)"  -->
+          <li>
+            <span class="badge">EP 25</span>
+            <div class="ep-meta" data-lang-block="ja">
+              <span>朝ドラ『ひかりのくすり』 第25話</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>Morning Drama "Hikari no Kusuri" Episode 25 </span>
+            </div>
+            <a href="https://note.com/modern_owl1687/n/n9bab4473c245" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
+             🎬 第25話「情報公開と小さな記者会見」
+            </a>
+            <a href="https://note.com/modern_owl1687/n/n88de483ccecd" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
+              🎬 Episode 25: Information Disclosure and Small Press Conference
+            </a>
+          </li>
+<!--25 ★🎬 第25話「情報公開と小さな記者会見」  ★🎬 Episode 25: Information Disclosure and Small Press Conference  -->
+          <li>
+            <span class="badge">EP 26</span>
+            <div class="ep-meta" data-lang-block="ja">
+              <span>朝ドラ『ひかりのくすり』第26話</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>Morning Drama "Hikari no Kusuri" Episode 26</span>
+            </div>
+            <a href="https://note.com/modern_owl1687/n/n01b9ae578936" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
+              🎬 第26話「家族サイドの一日（娘さん視点）」 
+            </a>
+            <a href="https://note.com/modern_owl1687/n/n0f8d532af8f3" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
+               🎬 Episode 26: "A Day on the Family Side (Daughter's Perspective)"
+            </a>
+          </li>
+<!--26 ★🎬 第26話「家族サイドの一日（娘さん視点）」  ★🎬 Episode 26: "A Day on the Family Side (Daughter's Perspective)"  -->
+          <li>
+            <span class="badge">EP 27</span>
+            <div class="ep-meta" data-lang-block="ja">
+              <span>朝ドラ『ひかりのくすり』 第27話</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>Morning Drama "Hikari no Kusuri" Episode 27</span>
+            </div>
+            <a href="https://note.com/modern_owl1687/n/na0787751dbb9" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
+             🎬 第27話「大学ラボ側の若手たちの“くすり観”」
+            </a>
+            <a href="https://note.com/modern_owl1687/n/nf5cbe6a0eebe" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
+              🎬 Episode 27: "The "Kusuri" of young people on the side of the university lab"
+            </a>
+          </li>
+<!--27 ★🎬 第27話「大学ラボ側の若手たちの“くすり観”」  ★🎬 Episode 27: "The "Kusuri" of young people on the side of the university lab"  -->
+          <li>
+            <span class="badge">EP 28</span>
+            <div class="ep-meta" data-lang-block="ja">
+              <span>朝ドラ『ひかりのくすり』第28話</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>Morning Drama "Hikari no Kusuri" Episode 28</span>
+            </div>
+            <a href="https://note.com/modern_owl1687/n/n21c799e53305" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
+               🎬 第28話「CEO候補・水野さんの過去回想回」
+            </a>
+            <a href="https://note.com/modern_owl1687/n/n54f706a64bc3" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
+               🎬 Episode 28: "CEO Candidate Mizuno's Past Flashbacks"
+            </a>
+          </li>
+<!--28 ★🎬 第28話「CEO候補・水野さんの過去回想回」  ★🎬 Episode 28: "CEO Candidate Mizuno's Past Flashbacks"  -->
+          <li>
+            <span class="badge">EP 29</span>
+            <div class="ep-meta" data-lang-block="ja">
+              <span>朝ドラ 『ひかりのくすり』第29話</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>Morning Drama "Hikari no Kusuri" Episode 29</span>
+            </div>
+            <a href="https://note.com/modern_owl1687/n/na9571995903a" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
+              🎬 第29話「“ひかりバイオ”の仲間集め・採用」
+            </a>
+            <a href="https://note.com/modern_owl1687/n/nde496f75fba3" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
+              🎬 Episode 29: "Gathering and Recruiting Friends of "Hikari Bio"
+            </a>
+          </li>
+<!--29 ★🎬 第29話「“ひかりバイオ”の仲間集め・採用」  ★🎬 Episode 29: "Gathering and Recruiting Friends of "Hikari Bio"  -->
+          <li>
+            <span class="badge">EP 30</span>
+             <div class="ep-meta" data-lang-block="ja">
+              <span>朝ドラ『ひかりのくすり』 第30話</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>Morning Drama "Hikari no Kusuri" Episode 30</span>
+            </div>
+            <a href="https://note.com/modern_owl1687/n/n3569e20cd512" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
+              🎬 第30話「新メンバー初出勤＆早速バタバタ」
+            </a>
+            <a href="https://note.com/modern_owl1687/n/n86dcb57c6e31" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
+              🎬 Episode 30: "New Members' First Appearance at Work & Immediately Flapping"
+            </a>
+          </li>
+<!--30 ★🎬 第30話「新メンバー初出勤＆早速バタバタ」  ★🎬 Episode 30: "New Members' First Appearance at Work & Immediately Flapping"   -->
+          <li>
+            <span class="badge">EP 31</span>
+             <div class="ep-meta" data-lang-block="ja">
+              <span>朝ドラ『ひかりのくすり』 第31話</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>Morning Drama "Hikari no Kusuri" Episode 31</span>
+            </div>
+            <a href="https://note.com/modern_owl1687/n/n54b4eac39adf" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
+              🎬 第31話「父の薬局と“治る日”のことば」スピンオフ第２弾
+            </a>
+            <a href="https://note.com/modern_owl1687/n/n7a7f332ca178" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
+             🎬 Episode 31: "Father's Pharmacy and the Words of the Day of Healing" Spin-off Part 2
+            </a>
+          </li>
+<!--31 ★🎬 第31話「父の薬局と“治る日”のことば」スピンオフ第２弾  ★  -->
+          <li>
+            <span class="badge">EP 32</span>
+            <div class="ep-meta" data-lang-block="ja">
+              <span>朝ドラ『ひかりのくすり』第32話 </span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>Morning Drama "Hikari no Kusuri" Episode 32</span>
+            </div>
+            <a href="https://note.com/modern_owl1687/n/naff782ae80c6" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
+                🎬 第32話「治験データ、初めての“良いサイン”」
+            </a>
+            <a href="https://note.com/modern_owl1687/n/naabfb79ef0c8" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
+               🎬 Episode 32: "Clinical trial data, the first "good sign" 
+            </a>
+          </li>
+<!--32 ★🎬 第32話「治験データ、初めての“良いサイン”」  ★🎬 Episode 32: "Clinical trial data, the first "good sign"   -->
+          <li>
+            <span class="badge">EP 33</span>
+            <div class="ep-meta" data-lang-block="ja">
+              <span> 朝ドラ『ひかりのくすり』第33話</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span> Morning Drama "Hikari no Kusuri" Episode 33</span>
+            </div>
+            <a href="https://note.com/modern_owl1687/n/nff69d15df7fd" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
+             🎬 第33話「株価と世間の評価、“良いサイン”の伝わり方」
+            </a>
+            <a href="https://note.com/modern_owl1687/n/nf1515254db10" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
+             🎬 Episode 33: "Stock Prices, Public Evaluation, and How to Convey a "Good Sign" 
+            </a>
+          </li>
+<!--33 ★🎬 第33話「株価と世間の評価、“良いサイン”の伝わり方」  ★🎬 Episode 33: "Stock Prices, Public Evaluation, and How to Convey a "Good Sign"   -->
+          <li>
+            <span class="badge">EP 34</span>
+             <div class="ep-meta" data-lang-block="ja">
+              <span>朝ドラ『ひかりのくすり』第34話</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>Morning Drama "Hikari no Kusuri" Episode 34</span>            
+            </div>
+            <a href="https://note.com/modern_owl1687/n/n4d78ee514a12" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
+               🎬 第34話「治験継続の裏で、“続けない”と決める患者さん」
+            </a>
+            <a href="https://note.com/modern_owl1687/n/n63bf9145db71" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
+               🎬 Episode 34: "Behind the Continuation of the Clinical Trial, a Patient Decides Not to Continue" 
+            </a>
+         </li>
+<!--34 ★🎬 第34話「治験継続の裏で、“続けない”と決める患者さん」  ★🎬 Episode 34: "Behind the Continuation of the Clinical Trial, a Patient Decides Not to Continue"  -->
+          <li>
+            <span class="badge">EP 35</span>
+            <div class="ep-meta" data-lang-block="ja">
+              <span>朝ドラ『ひかりのくすり』 第35話</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>Morning Drama "Hikari no Kusuri" Episode 35 </span>
+            </div>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
+             
+            </a>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
+              
+            </a>
+          </li>
+<!--35 ★🎬 第35話「“次のフェーズへ進めるか”運命の評価会議」  ★ 🎬 Episode 35: "Proceed to the Next Phase" Fate Evaluation Meeting -->
+          <li>
+            <span class="badge">EP 36</span>
+            <div class="ep-meta" data-lang-block="ja">
+              <span>朝ドラ『ひかりのくすり』第36話</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>Morning Drama "Hikari no Kusuri" Episode 36</span>
+            </div>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
+               
+            </a>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
+               
+            </a>
+          </li>
+<!--36 ★🎬 第36話「資金調達と“お金の現実”に向き合う」  ★🎬 Episode 36: "Financing and Facing the Reality of Money"  -->
+          <li>
+            <span class="badge">EP 37</span>
+            <div class="ep-meta" data-lang-block="ja">
+              <span>朝ドラ『ひかりのくすり』 第37話</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>Morning Drama "Hikari no Kusuri" Episode 37</span>
+            </div>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
+             
+            </a>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
+              
+            </a>
+          </li>
+<!--37 ★🎬 第37話「“修正版フェーズIIa”プロトコル徹夜設計」  ★ 🎬 Episode 37: "Revised Phase IIa" Protocol Overnight Design -->
+          <li>
+            <span class="badge">EP 38</span>
+            <div class="ep-meta" data-lang-block="ja">
+              <span>朝ドラ『ひかりのくすり』第38話</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>Morning Drama "Hikari no Kusuri" Episode 38</span>
+            </div>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
+               
+            </a>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
+               
+            </a>
+          </li>
+<!--38 ★🎬 第38話「病院側の現場調整（ベッド・人手・家族説明）のリアル」  ★🎬 Episode 38: "The Reality of Hospital On-site Coordination (Bed, Manpower, Family Explanation)"  -->
+          <li>
+            <span class="badge">EP 39</span>
+            <div class="ep-meta" data-lang-block="ja">
+              <span>朝ドラ 『ひかりのくすり』第39話</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>Morning Drama "Hikari no Kusuri" Episode 39</span>
+            </div>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
+              
+            </a>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
+              
+            </a>
+          </li>
+<!--39 ★🎬 第39話「治験候補者リストから“最初の一人”を選ぶ葛藤」  ★🎬 Episode 39: The Conflict of Choosing the "First Person" from the Clinical Trial Candidate List"  -->
+          <li>
+            <span class="badge">EP 40</span>
+             <div class="ep-meta" data-lang-block="ja">
+              <span>朝ドラ『ひかりのくすり』 第40話</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>Morning Drama "Hikari no Kusuri" Episode 40</span>
+            </div>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
+              
+            </a>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
+              
+            </a>
+          </li>
+<!--40 ★🎬 第40話「No.02さんの一日 〜地方から“ひかり”を考える〜」  ★ 🎬 Episode 40: "No.02's Day in the Life of No.02 - Thinking about "Hikari" from the Countryside" -->
+          <li>
+            <span class="badge">EP 41</span>
+             <div class="ep-meta" data-lang-block="ja">
+              <span>朝ドラ『ひかりのくすり』 第41話</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>Morning Drama "Hikari no Kusuri" Episode 41</span>
+            </div>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
+              
+            </a>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
+             
+            </a>
+          </li>
+<!--41 ★第41話「サインの結果（その場で書くか、一度持ち帰るか）」★🎬 Episode 41: Signs of Results (Write on the spot or take them home)  -->
+          <li>
+            <span class="badge">EP 42</span>
+            <div class="ep-meta" data-lang-block="ja">
+              <span>朝ドラ『ひかりのくすり』第42話 </span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>Morning Drama "Hikari no Kusuri" Episode 42</span>
+            </div>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
+                
+            </a>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
+               
+            </a>
+          </li>
+<!--42 ★📺 第42話「数値に一喜一憂する家族」  ★📺 Episode 42: "A Family Shakes Up with Numbers"  -->
+          <li>
+            <span class="badge">EP 43</span>
+            <div class="ep-meta" data-lang-block="ja">
+              <span> 朝ドラ『ひかりのくすり』第43話</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span> Morning Drama "Hikari no Kusuri" Episode 43</span>
+            </div>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
+               
+            </a>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
+             
+            </a>
+          </li>
+<!--43 ★📺 第43話「家族の待合室の時間」  ★ 📺 Episode 43: Family Waiting Room Time -->
+          <li>
+            <span class="badge">EP 44</span>
+             <div class="ep-meta" data-lang-block="ja">
+              <span>朝ドラ『ひかりのくすり』第44話</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>Morning Drama "Hikari no Kusuri" Episode 44</span>            
+            </div>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
+               
+            </a>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
+               
+            </a>
+         </li>
+<!--44 ★📺 第44話「“最初の夜” 家での副作用と見守り」  ★📺 Episode 44: "The First Night" Side Effects and Watching at Home   -->
+          <li>
+            <span class="badge">EP 45</span>
+            <div class="ep-meta" data-lang-block="ja">
+              <span>朝ドラ『ひかりのくすり』 第45話</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>Morning Drama "Hikari no Kusuri" Episode 45 </span>
+            </div>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
+             
+            </a>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
+              
+            </a>
+          </li>
+<!--45 ★📺 第45話「“生活のリズム”が変わる家族」（通院スケジュール・仕事との両立・学校の行事）   ★📺 Episode 45: "A Family That Changes the Rhythm of Life" (Hospital Schedule, Balancing Work, School Events)  -->
+          <li>
+            <span class="badge">EP 46</span>
+            <div class="ep-meta" data-lang-block="ja">
+              <span>朝ドラ『ひかりのくすり』第46話</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>Morning Drama "Hikari no Kusuri" Episode 46</span>
+            </div>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
+               
+            </a>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
+               
+            </a>
+          </li>
+<!--46 ★📺 第46話「“治験仲間”との出会い」   ★📺 Episode 46: "Meeting with a 'Clinical Trial Friend'"  -->
+          <li>
+            <span class="badge">EP 47</span>
+            <div class="ep-meta" data-lang-block="ja">
+              <span>朝ドラ『ひかりのくすり』 第47話</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>Morning Drama "Hikari no Kusuri" Episode 47</span>
+            </div>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
+             
+            </a>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
+              
+            </a>
+          </li>
+<!--47 ★📺 第47話「佐藤さん側に少し重い局面が来て、『治験の続行／中止』を考える  ★📺 Episode 47: "Mr. Sato's side comes to a slightly heavy phase and thinks about 'continuing/canceling the clinical trial'   -->
+          <li>
+            <span class="badge">EP 48</span>
+            <div class="ep-meta" data-lang-block="ja">
+              <span>朝ドラ『ひかりのくすり』第48話</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>Morning Drama "Hikari no Kusuri" Episode 48</span>
+            </div>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
+               
+            </a>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
+               
+            </a>
+          </li>
+<!--48 ★📺 第48話「逆に、別の“若い治験参加者”との出会いで世代の違いが浮かぶ」   ★📺 Episode 48: "On the contrary, a generational difference comes to mind when I meet another "young clinical trial participant"  -->
+          <li>
+            <span class="badge">EP 49</span>
+            <div class="ep-meta" data-lang-block="ja">
+              <span>朝ドラ 『ひかりのくすり』第49話</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>Morning Drama "Hikari no Kusuri" Episode 49</span>
+            </div>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
+              
+            </a>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
+              
+            </a>
+          </li>
+<!--49 ★📺 第49話「南条さんの『配信／情報発信』が別の患者さんを救う」  ★📺 Episode 49: Nanjo's 'Distribution/Information Dissemination' Saves Another Patient"  -->
+          <li>
+            <span class="badge">EP 50</span>
+             <div class="ep-meta" data-lang-block="ja">
+              <span>朝ドラ『ひかりのくすり』 第50話</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>Morning Drama "Hikari no Kusuri" Episode 50</span>
+            </div>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
+              
+            </a>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
+              
+            </a>
+          </li>
+<!--50 ★📺 第50話「“情報が多すぎて不安になる日”と、情報との付き合い方」  ★📺 Episode 50: "The Day When You Get Too Much Information and Get Anxious" and How to Deal with Information   -->
+          <li>
+            <span class="badge">EP 51</span>
+             <div class="ep-meta" data-lang-block="ja">
+              <span>朝ドラ『ひかりのくすり』 第51話</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>Morning Drama "Hikari no Kusuri" Episode 51</span>
+            </div>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
+              
+            </a>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
+             
+            </a>
+          </li>
+<!--51 ★📺 第51話「“ひかりマラソン前半戦を振り返る総集編”＋“これからの目標を決める」  ★📺 Episode 51: "Highlights looking back on the first half of the Hikari Marathon" + "Decide on your future goals"   -->
+          <li>
+            <span class="badge">EP 52</span>
+            <div class="ep-meta" data-lang-block="ja">
+              <span>朝ドラ『ひかりのくすり』第52話 </span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>Morning Drama "Hikari no Kusuri" Episode 52</span>
+            </div>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
+                
+            </a>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
+               
+            </a>
+          </li>
+<!--52 ★📺 第52話「“後半戦の最初の一歩” ― 生活の目標をひとつ実行してみる」  ★📺 Episode 52: "The First Step of the Second Half" - Implementing a Life Goal   -->
+          <li>
+            <span class="badge">EP 53</span>
+            <div class="ep-meta" data-lang-block="ja">
+              <span> 朝ドラ『ひかりのくすり』第53話</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span> Morning Drama "Hikari no Kusuri" Episode 53</span>
+            </div>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
+               
+            </a>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
+             
+            </a>
+          </li>
+<!--53 ★📺 第53話「学校行事への参加（運動会や文化祭）をどう調整するか」  ★📺 Episode 53: "How to coordinate participation in school events (sports day and cultural festival)"  -->
+          <li>
+            <span class="badge">EP 54</span>
+             <div class="ep-meta" data-lang-block="ja">
+              <span>朝ドラ『ひかりのくすり』第54話</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>Morning Drama "Hikari no Kusuri" Episode 54</span>            
+            </div>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
+               
+            </a>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
+               
+            </a>
+         </li>
+<!--54 ★📺 第54話「“やりたいことリスト”を作って、優先順位をつける」  ★📺 Episode 54: "Make a 'Wish List' and Prioritize It"   -->
+          <li>
+            <span class="badge">EP 55</span>
+            <div class="ep-meta" data-lang-block="ja">
+              <span>朝ドラ『ひかりのくすり』 第55話</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>Morning Drama "Hikari no Kusuri" Episode 55 </span>
+            </div>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
+             
+            </a>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
+              
+            </a>
+          </li>
+<!--55 ★📺 第55話「“トップ3”のひとつ、“ひかり日記本”を実際に製本してみる」   ★ 📺 Episode 55: "One of the "Top 3", "Hikari Diary", is actually bound  -->
+          <li>
+            <span class="badge">EP 56</span>
+            <div class="ep-meta" data-lang-block="ja">
+              <span>朝ドラ『ひかりのくすり』第56話</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>Morning Drama "Hikari no Kusuri" Episode 56</span>
+            </div>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
+               
+            </a>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
+               
+            </a>
+          </li>
+<!--56 ★📺 第56話「“星を見に行く計画”と、天気予報・体調・不安との駆け引き」   ★ 📺 Episode 56: "Plans to go see the stars" and bargaining with weather forecasts, physical condition, and anxiety  -->
+          <li>
+            <span class="badge">EP 57</span>
+            <div class="ep-meta" data-lang-block="ja">
+              <span>朝ドラ『ひかりのくすり』 第57話</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>Morning Drama "Hikari no Kusuri" Episode 57</span>
+            </div>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
+             
+            </a>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
+              
+            </a>
+          </li>
+<!--57 ★📺 第57話「“やりたいことリスト”を作って、優先順位をつける」  ★📺 Episode 57: Make a "Wish List" and Prioritize   -->
+          <li>
+            <span class="badge">EP 58</span>
+            <div class="ep-meta" data-lang-block="ja">
+              <span>朝ドラ『ひかりのくすり』第58話</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>Morning Drama "Hikari no Kusuri" Episode 58</span>
+            </div>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
+               
+            </a>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
+               
+            </a>
+          </li>
+<!--58 ★📺 第58話「第二回・河川敷★チャレンジ」   ★ 📺 Episode 58: "The Second Riverbed ★ Challenge"  -->
+          <li>
+            <span class="badge">EP 59</span>
+            <div class="ep-meta" data-lang-block="ja">
+              <span>朝ドラ 『ひかりのくすり』第59話</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>Morning Drama "Hikari no Kusuri" Episode 59</span>
+            </div>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
+              
+            </a>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
+              
+            </a>
+          </li>
+<!--59 ★  ★ 📺 Episode 59: Nanjo's 'Distribution/Information Transmission' Saves Another Patient"  -->
+          <li>
+            <span class="badge">EP 60</span>
+             <div class="ep-meta" data-lang-block="ja">
+              <span>朝ドラ『ひかりのくすり』 第60話</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>Morning Drama "Hikari no Kusuri" Episode 60</span>
+            </div>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
+              
+            </a>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
+              
+            </a>
+          </li>
+<!--60 ★  ★📺 Episode 60: "Nanjo's 'Distribution/Information Transmission' Saves Another Patient"   -->
+          <li>
+            <span class="badge">EP 61</span>
+             <div class="ep-meta" data-lang-block="ja">
+              <span>朝ドラ『ひかりのくすり』 第61話</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>Morning Drama "Hikari no Kusuri" Episode 61</span>
+            </div>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
+              
+            </a>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
+             
+            </a>
+          </li>
+<!--61 ★  ★📺 Episode 61: "While being shaken by the "incitement" of colleagues and the Internet, he solidifies his "own cheering style"  -->
+          <li>
+            <span class="badge">EP 62</span>
+            <div class="ep-meta" data-lang-block="ja">
+              <span>朝ドラ『ひかりのくすり』第62話 </span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>Morning Drama "Hikari no Kusuri" Episode 62</span>
+            </div>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
+                
+            </a>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
+               
+            </a>
+          </li>
+<!--62 ★  ★📺 Episode 62: "Clinical Trial Explanation Day: Murakami Family Meeting and Reunion at the Hospital"  -->
+          <li>
+            <span class="badge">EP 63</span>
+            <div class="ep-meta" data-lang-block="ja">
+              <span> 朝ドラ『ひかりのくすり』第63話</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span> Morning Drama "Hikari no Kusuri" Episode 63</span>
+            </div>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
+               
+            </a>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
+             
+            </a>
+          </li>
+<!--63 ★  ★📺 Episode 63: "Sites, Companies, and Shareholders" -->
+          <li>
+            <span class="badge">EP 64</span>
+             <div class="ep-meta" data-lang-block="ja">
+              <span>朝ドラ『ひかりのくすり』第64話</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>Morning Drama "Hikari no Kusuri" Episode 64</span>            
+            </div>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
+               
+            </a>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
+               
+            </a>
+         </li>
+<!--64 ★  ★📺 Episode 64: "The Murakami family has a full-fledged "decision meeting to continue the clinical trial"   -->
+          <li>
+            <span class="badge">EP 65</span>
+            <div class="ep-meta" data-lang-block="ja">
+              <span>朝ドラ『ひかりのくすり』 第65話</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>Morning Drama "Hikari no Kusuri" Episode 65 </span>
+            </div>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
+             
+            </a>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
+              
+            </a>
+          </li>
+<!--65 ★   ★📺 Episode 65: "The Day of Healing is the one who will make it from now on"    -->
+          <li>
+            <span class="badge">EP 66</span>
+            <div class="ep-meta" data-lang-block="ja">
+              <span>朝ドラ『ひかりのくすり』第66話</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>Morning Drama "Hikari no Kusuri" Episode 66</span>
+            </div>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
+               
+            </a>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
+               
+            </a>
+          </li>
+<!--66 ★   ★📺 Episode 66: Redesigning from Interruption   -->
+          <li>
+            <span class="badge">EP 67</span>
+            <div class="ep-meta" data-lang-block="ja">
+              <span>朝ドラ『ひかりのくすり』 第67話</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>Morning Drama "Hikari no Kusuri" Episode 67</span>
+            </div>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
+             
+            </a>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
+              
+            </a>
+          </li>
+<!--67 ★  ★📺 Episode 67: "The First Outpatient Day After Redesign (Explanation Day)"  -->
+          <li>
+            <span class="badge">EP 68</span>
+            <div class="ep-meta" data-lang-block="ja">
+              <span>朝ドラ『ひかりのくすり』第68話</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>Morning Drama "Hikari no Kusuri" Episode 68</span>
+            </div>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
+               
+            </a>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
+               
+            </a>
+          </li>
+<!--68 ★   ★📺 Episode 68: "The Day of Restart" for Each Patient   -->
+          <li>
+            <span class="badge">EP 69</span>
+            <div class="ep-meta" data-lang-block="ja">
+              <span>朝ドラ 『ひかりのくすり』第69話</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>Morning Drama "Hikari no Kusuri" Episode 69</span>
+            </div>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
+              
+            </a>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
+              
+            </a>
+          </li>
+<!--69 ★  ★📺 Episode 69: The Murakami Family's First Changes in the "Redesign Course"   -->
+          <li>
+            <span class="badge">EP 70</span>
+             <div class="ep-meta" data-lang-block="ja">
+              <span>朝ドラ『ひかりのくすり』 第70話</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>Morning Drama "Hikari no Kusuri" Episode 70</span>
+            </div>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
+              
+            </a>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
+              
+            </a>
+          </li>
+<!--70 ★  ★📺 Episode 70: Rin's "Balancing School and Clinical Trials"   -->
+          <li>
+            <span class="badge">EP 71</span>
+             <div class="ep-meta" data-lang-block="ja">
+              <span>朝ドラ『ひかりのくすり』 第71話</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>Morning Drama "Hikari no Kusuri" Episode 71</span>
+            </div>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
+              
+            </a>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
+             
+            </a>
+          </li>
+<!--71 ★  ★📺 Episode 71: Weekend Picnic Day, Murakami and Rin's "Each Weekend"  -->
+          <li>
+            <span class="badge">EP 72</span>
+            <div class="ep-meta" data-lang-block="ja">
+              <span>朝ドラ『ひかりのくすり』第72話 </span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>Morning Drama "Hikari no Kusuri" Episode 72</span>
+            </div>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
+                
+            </a>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
+               
+            </a>
+          </li>
+<!--72 ★  ★📺 Episode 72: What to do when an "unexpected wave of physical condition" comes.  -->
+          <li>
+            <span class="badge">EP 73</span>
+            <div class="ep-meta" data-lang-block="ja">
+              <span> 朝ドラ『ひかりのくすり』第73話</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span> Morning Drama "Hikari no Kusuri" Episode 73</span>
+            </div>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
+               
+            </a>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
+             
+            </a>
+          </li>
+<!--73 ★  ★📺 Episode 73: Rin's "Balancing School and Clinical Trials"  -->
+          <li>
+            <span class="badge">EP 74</span>
+             <div class="ep-meta" data-lang-block="ja">
+              <span>朝ドラ『ひかりのくすり』第74話</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>Morning Drama "Hikari no Kusuri" Episode 74</span>            
+            </div>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
+               
+            </a>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
+               
+            </a>
+         </li>
+<!--74 ★  ★📺 Episode 74: "How the 'Company' Responds to Mr. Nanjo's Distribution (Internal Meeting)"   -->
+          <li>
+            <span class="badge">EP 75</span>
+            <div class="ep-meta" data-lang-block="ja">
+              <span>朝ドラ『ひかりのくすり』 第75話</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>Morning Drama "Hikari no Kusuri" Episode 75 </span>
+            </div>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
+             
+            </a>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
+              
+            </a>
+          </li>
+<!--75 ★   ★📺 Episode 75: "On the day of the home clinical trial, Nanjo and Rin connect online"   -->
+          <li>
+            <span class="badge">EP 76</span>
+            <div class="ep-meta" data-lang-block="ja">
+              <span>朝ドラ『ひかりのくすり』第76話</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>Morning Drama "Hikari no Kusuri" Episode 76</span>
+            </div>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
+               
+            </a>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
+               
+            </a>
+          </li>
+<!--76 ★   ★📺 Episode 76: "The day I was able to ask, 'Are you getting a little better?'"   -->
+          <li>
+            <span class="badge">EP 77</span>
+            <div class="ep-meta" data-lang-block="ja">
+              <span>朝ドラ『ひかりのくすり』 第77話</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>Morning Drama "Hikari no Kusuri" Episode 77</span>
+            </div>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
+             
+            </a>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
+              
+            </a>
+          </li>
+<!--77 ★  ★📺 Episode 77: Partial Admission  -->
+          <li>
+            <span class="badge">EP 78</span>
+            <div class="ep-meta" data-lang-block="ja">
+              <span>朝ドラ『ひかりのくすり』第78話</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>Morning Drama "Hikari no Kusuri" Episode 78</span>
+            </div>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
+               
+            </a>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
+               
+            </a>
+          </li>
+<!--78 ★   ★📺 Episode 78: A New Research Theme  -->
+          <li>
+            <span class="badge">EP 79</span>
+            <div class="ep-meta" data-lang-block="ja">
+              <span>朝ドラ 『ひかりのくすり』第79話</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>Morning Drama "Hikari no Kusuri" Episode 79</span>
+            </div>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
+              
+            </a>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
+              
+            </a>
+          </li>
+<!--79 ★  ★📺 Episode 79: "Minatono Town Revitalization (Medical Care + Tourism + Education)"   -->
+          <li>
+            <span class="badge">EP 80</span>
+             <div class="ep-meta" data-lang-block="ja">
+              <span>朝ドラ『ひかりのくすり』 第80話</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>Morning Drama "Hikari no Kusuri" Episode 80</span>
+            </div>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja">
+              
+            </a>
+            <a href="#" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en">
+              
+            </a>
+          </li>
+<!--80 ★  ★📺 Episode 80: The Hamada Family Visits Minatono   -->
+ 
+ 
+        <div class="section-small">
+          <p class="lead" data-lang-block="ja">
+            ※ 各リンクの <code>href="#"</code> を、ご自身の note の実際のURLに差し替えてください。
+          </p>
+          <p class="lead" data-lang-block="en">
+            ※ Please replace each <code>href="#”</code> with the actual note
+            URLs of your episodes.
+          </p>
+        </div>
+      </section>
+ 
+      <!-- 右カラム：黎明シリーズ外伝など -->
+      <section class="section">
+        <div class="pill" data-lang-block="ja">
+          🌏 黎明シリーズ外伝 & 推しエピソード
+        </div>
+        <div class="pill" data-lang-block="en">
+          🌏 Dawn Series Side Stories & Picks
+        </div>
+ 
+        <h2 data-lang-block="ja">黎明シリーズ外伝（通貨・資源・エネルギー・教育）</h2>
+        <h2 data-lang-block="en">Dawn Series Side Stories</h2>
+ 
+        <p class="lead" data-lang-block="ja">
+          『AI副大臣：黎明のルール』と同じ世界線にある外伝群です。
+          通貨・資源・エネルギー・教育など、マクロなテーマを物語として描いています。
+          『ひかりのくすり』を気に入ってくださった方へ、世界の“裏側”としておすすめです。
+        </p>
+        <p class="lead" data-lang-block="en">
+          These side stories share the same timeline as
+          “AI Deputy Minister: Rules of Dawn”.
+          They explore macro-themes such as currency, resources, energy,
+          and education through near-future fiction.
+        </p>
+ 
+        <ul class="list">
+          <li>
+            <span class="badge">🌅 Fast Guide</span>
+            <a
+              href="https://note.com/modern_owl1687/n/n4f26f2874203"
+              target="_blank"
+              rel="noopener"
+              class="ep-title link-arrow"
+              data-lang-block="ja"
+            >
+              【ガイド】黎明シリーズ｜読み方ガイド
+            </a>
+            <a
+              href="https://note.com/modern_owl1687/n/na093c54aa319"
+              target="_blank"
+              rel="noopener"
+              class="ep-title link-arrow"
+              data-lang-block="en"
+            >
+              [Guide] The Dawn Series — How to Read
+            </a>
+            <div class="ep-meta" data-lang-block="ja">
+              <span>📺 通貨・資源・エネルギーといったマクロな国家問題、</span><span>📺 48時間の判断が命を左右する現場、</span><span>📺 そして「判断しないAI」という思想と制度。</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>📺 Based on the birth of LUX-01, the AI Deputy Minister Who Does Not Judge, the official reading guide to the world of a series depicting currency, resources, energy, frontline judgment, and institutional design. An entrance that guides you through the three-tiered structure of stories, side stories, and ideas.
+</span>
+		</div>
+          </li>
+        </ul>
+        <ul class="list">
+          <li>
+            <span class="badge">🌅 Guide</span>
+            <a
+              href="https://note.com/modern_owl1687/n/ne0d32e7de51a?app_launch=false"
+              target="_blank"
+              rel="noopener"
+              class="ep-title link-arrow"
+              data-lang-block="ja"
+            >
+              通貨・資源・エネルギー主権ライン（外伝あらすじ）
+            </a>
+            <a
+              href="https://note.com/modern_owl1687/n/n25154d28202c"
+              target="_blank"
+              rel="noopener"
+              class="ep-title link-arrow"
+              data-lang-block="en"
+            >
+              Currency / Resources / Energy Sovereignty Line – Overview
+            </a>
+            <div class="ep-meta" data-lang-block="ja">
+              <span> • 主権（通貨・資源・軍事・政策）は 国家の“判断の核心”</span><span> • そこが揺らぐと、政治はAIへ「委任」せざるを得ない</span><span> • つまり LUX-01 が必要とされる“理由”の物語 がこのライン</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>• Sovereignty (currency, resources, military, policy) is the core of national
+  judgment
+• Once these cores shake, politics is forced to delegate judgment to AI
+• Therefore, the A Line is the story of why LUX-01 must exist
+By reading the A Line, the reader understands:
+“The AI Vice-Minister was not born because it was convenient.
+It was born because the world was cornered.”</span>
+          </li>
+          <li>
+            <span class="badge">LUX-01</span>
+            <a
+              href="https://note.com/modern_owl1687/n/n9570e200d7e3"
+              target="_blank"
+              rel="noopener"
+              class="ep-title link-arrow"
+              data-lang-block="ja"
+            >
+              AI副大臣プロローグ編 ― LUX-01誕生前夜
+            </a>
+            <a
+              href="https://note.com/modern_owl1687/n/ncf760babdfff"
+              target="_blank"
+              rel="noopener"
+              class="ep-title link-arrow"
+              data-lang-block="en"
+            >
+              AI Deputy Minister: Prologue – The Night Before LUX-01
+            </a>
+            <div class="ep-meta" data-lang-block="ja">
+              <span>🎬 世界が判断を放棄し始めた2030年代、人々は「決めてくれ」とAIに委ね始める。巨大な行政判断を担う“副大臣AI”プロジェクトが秘密裏に進むが、設計思想はまだ揺れている。政治家たちは自らの責任回避のためにAIを望む一方、市民は公平な未来への希望を託す。物語は、試験機「LUX-01」が誕生する直前、誰もが気づかない“歴史の分岐点”を静かに描く。</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>① AI Vice-Minister Prologue
+In the 2030s, the world begins to abandon judgment. People increasingly say, “Please decide for us,” and delegate decisions to AI.
+A classified national project aims to build an “AI Vice-Minister” capable of massive administrative decision-making—but the design philosophy is still wavering.
+Politicians seek AI to evade responsibility, while citizens hope for fairness.
+The story quietly depicts a “branch point in history,” just before the prototype LUX-01 is born. </span>
+          </li>
+          <li>
+            <span class="badge">2032</span>
+            <a
+              href="https://note.com/modern_owl1687/n/n951e57b9293a"
+              target="_blank"
+              rel="noopener"
+              class="ep-title link-arrow"
+              data-lang-block="ja"
+            >
+              8兆円フリーズの夜 ― 通貨主権ショック2032
+            </a>
+            <a
+              href="https://note.com/modern_owl1687/n/nb7f7a314f581"
+              target="_blank"
+              rel="noopener"
+              class="ep-title link-arrow"
+              data-lang-block="en"
+            >
+              The 8-Trillion Freeze Night – Currency Shock 2032
+            </a>
+            <div class="ep-meta" data-lang-block="ja">
+              <span>🎬 ある冬の夜──主要ATMと送金システムが同時に停止。流通通貨8兆円が「存在しているのに動かない」。原因は国債市場で自律型取引AI同士が暴走し、信用のネットワーク自体が凍結したことだった。人々は初めて「通貨は数字ではなく、信用で支えられている」現実に向き合う。政府はAIによるマクロ制御の必要を痛感し、LUX-01 計画が加速する。</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>② The Night of the 8-Trillion Freeze — Currency Sovereignty Shock 2032
+One winter night—ATMs and payment systems nationwide suddenly stop.
+Eight trillion yen in circulating currency “exists but cannot move.”
+The cause: autonomous trading AIs in the bond market spiral into mutual lockout, freezing the very network of trust.
+For the first time, society confronts the truth:
+　　“Money is not numbers. It is trust.”
+The government realizes the need for AI-assisted macro-control, accelerating the LUX-01 project.</span>
+          </li>
+          <li>
+            <span class="badge">2038</span>
+            <a
+              href="https://note.com/modern_owl1687/n/n76d10f9a7724"
+              target="_blank"
+              rel="noopener"
+              class="ep-title link-arrow"
+              data-lang-block="ja"
+            >
+              48時間ライン ― 武力行使AI審査法2038
+            </a>
+            <a
+              href="https://note.com/modern_owl1687/n/n652da33a57f4"
+              target="_blank"
+              rel="noopener"
+              class="ep-title link-arrow"
+              data-lang-block="en"
+            >
+              Dawn Series Side Story – 48-Hour Line – Use of Force AI Review Act 2038
+            </a>
+            <div class="ep-meta" data-lang-block="ja">
+              <span>🎬 軍事力の発動には、AI審査が必須となる時代。敵対国の挑発に対して、政府は48時間以内に判断せねばならない。情報過多と短時間判断の板挟みで、人間による決裁はほぼ不可能。国家安全保障の未来は、LUX-01が「撃つか、撃たないか」を決める世界に向かって傾斜していく。</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>③ The 48-Hour Line — Armed Force AI Review Act 2038
+In this era, military action requires mandatory AI review.
+When provoked by a rival nation, the government must decide within 48 hours.
+Human decision-making becomes nearly impossible under the load of excessive information and shrinking time.
+The future of national security begins to tilt toward a world where
+　　LUX-01 decides “to strike or not to strike.”</span>
+          </li>
+          <li>
+            <span class="badge">AI LUX-ED-01</span>
+            <a
+              href="https://note.com/modern_owl1687/n/nae31ef86bc45"
+              target="_blank"
+              rel="noopener"
+              class="ep-title link-arrow"
+              data-lang-block="ja"
+            >
+              特集「教育AI LUX-ED-01」ー 一億教室マップの夜
+            </a>
+            <a
+              href="https://note.com/modern_owl1687/n/nf36833e70ddf"
+              target="_blank"
+              rel="noopener"
+              class="ep-title link-arrow"
+              data-lang-block="en"
+            >
+               Feature: “Education AI LUX-ED-01” — Night of the One-Hundred-Million Classroom Map
+            </a>
+            <div class="ep-meta" data-lang-block="ja">
+              <span>学びの地域格差解消を目的に導入された教育AI。しかし、データには地域の貧困・家庭環境までも刻まれ、“見えなかった現実”が地図化されてしまう。AIは平等を与えるのか、差を可視化してしまうのか。教育現場の葛藤は、政策AIの議論へと波及し、「子どもを誰が決めるのか」という問いが突き付けられる。</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>Educational AI was introduced with the aim of eliminating regional disparities in learning. However, the data is also engraved with local poverty and family environment, and the "invisible reality" is mapped. Will AI give equality or make differences visible? The conflict in the educational field spills over into the debate on policy AI, and the question of "who decides the child" is confronted.</span>
+            </div>
+          </li>
+ 
+         <li>
+            <span class="badge">2035</span>
+            <a
+              href="https://note.com/modern_owl1687/n/nfaa70090efbe"
+              target="_blank"
+              rel="noopener"
+              class="ep-title link-arrow"
+              data-lang-block="ja"
+            >
+              南鳥島レアアース会議の夜 ― 資源主権ショック2035
+            </a>
+            <a
+              href="https://note.com/modern_owl1687/n/n6f62bddc51f6"
+              target="_blank"
+              rel="noopener"
+              class="ep-title link-arrow"
+              data-lang-block="en"
+            >
+              Minamitorishima Rare-Earth Conference Night – Resource Shock 2035
+            </a>
+            <div class="ep-meta" data-lang-block="ja">
+              <span>🎬 深海レアアースを巡る国際会議。資源を掘れば経済は救われるが、環境破壊の責任は誰が負うのか。各国は資源を「武器」にし始め、日本は初めて資源主権の脆さを突きつけられる。LUX-01は「利益とリスクの配分」という、最も政治的な判断の問いに巻き込まれていく。</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>④ Feature: “Education AI LUX-ED-01” — Night of the One-Hundred-Million Classroom Map
+An education AI is introduced to eliminate regional learning disparities.
+However, its data reveals poverty and family environments—mapping realities that had been invisible.
+Does AI create equality, or does it expose inequality?
+The tensions in schools spill into broader debates on policy AI, raising the fundamental question:
+　　“Who decides the future of a child?”</span>
+          </li>
+          <li>
+            <span class="badge">2040</span>
+            <a
+              href="https://note.com/modern_owl1687/n/nefca8730b5c1"
+              target="_blank"
+              rel="noopener"
+              class="ep-title link-arrow"
+              data-lang-block="ja"
+            >
+              ヘリカル・パクト ― エネルギー主権ショック2040
+            </a>
+            <a
+              href="https://note.com/modern_owl1687/n/n08f7b57b24a8"
+              target="_blank"
+              rel="noopener"
+              class="ep-title link-arrow"
+              data-lang-block="en"
+            >
+              Helical Pact – Energy Sovereignty Shock 2040
+            </a>
+            <div class="ep-meta" data-lang-block="ja">
+              <span>🎬 深海レアアースを巡る国際会議。資源を掘れば経済は救われるが、環境破壊の責任は誰が負うのか。各国は資源を「武器」にし始め、日本は初めて資源主権の脆さを突きつけられる。LUX-01は「利益とリスクの配分」という、最も政治的な判断の問いに巻き込まれていく。</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>⑤ Minamitorishima Rare-Earth Conference — Resource Sovereignty Shock 2035
+An international conference on deep-sea rare-earth mining.
+Mining can save the economy—but who bears the responsibility for environmental damage?
+Nations begin to use resources as political weapons.
+Japan faces the fragility of its own resource sovereignty,
+and LUX-01 is drawn into the most political form of judgment:
+　　“How to distribute benefits and risks.”</span>
+          </li>
+ 
+          <li>
+            <span class="badge">【黎明シリーズ外伝・特番】　　　</span>
+            <a
+              href="https://note.com/modern_owl1687/n/nadab382c0826"
+              target="_blank"
+              rel="noopener"
+              class="ep-title link-arrow"
+              data-lang-block="ja"
+            >
+              🦸‍♂️ 『正義の味方 LUX と 8兆円フリーズの夜II』
+            </a>
+            <a
+              href="https://note.com/modern_owl1687/n/n963b4987760f"
+              target="_blank"
+              rel="noopener"
+              class="ep-title link-arrow"
+              data-lang-block="en"
+            >
+              🌅 LUX and the Night the World Almost 
+            </a>
+            <div class="ep-meta" data-lang-block="ja">
+              <span> • 主権（通貨・資源・軍事・政策）は 国家の“判断の核心”</span><span> • そこが揺らぐと、政治はAIへ「委任」せざるを得ない</span><span> • つまり LUX-01 が必要とされる“理由”の物語 がこのライン</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>• Sovereignty (currency, resources, military, policy) is the core of national
+  judgment
+• Once these cores shake, politics is forced to delegate judgment to AI
+• Therefore, the A Line is the story of why LUX-01 must exist
+By reading the A Line, the reader understands:
+“The AI Vice-Minister was not born because it was convenient.
+It was born because the world was cornered.”</span>
+          </li>
+          <li>
+            <span class="badge">🌅 Fast Guide</span>
+            <a
+              href="https://note.com/modern_owl1687/n/nc242d3f122e7"
+              target="_blank"
+              rel="noopener"
+              class="ep-title link-arrow"
+              data-lang-block="ja"
+            >
+              B【黎明シリーズ外伝：R-17】海峡防空線シリーズの解説
+            </a>
+            <a
+              href="https://note.com/modern_owl1687/n/n791b4a9ef645"
+              target="_blank"
+              rel="noopener"
+              class="ep-title link-arrow"
+              data-lang-block="en"
+            >
+              AI Deputy Minister: Prologue – The Night Before LUX-01
+            </a>
+            <div class="ep-meta" data-lang-block="ja">
+              <span>🎬  国家の「決める力」が
+少しずつ AIへ滑り落ちていく時代。
+通貨・鉱物資源・エネルギー。
+3つの主権が揺らぐ瞬間を描くマクロ政治経済ライン。
+</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>📺 国家の「決める力」が
+少しずつ AIへ滑り落ちていく時代。
+通貨・鉱物資源・エネルギー。
+3つの主権が揺らぐ瞬間を描くマクロ政治経済ライン。
+</span>
+          </li>
+          <li>
+            <span class="badge">【黎明シリーズ外伝：R-17】①</span>
+            <a
+              href="https://note.com/modern_owl1687/n/n951e57b9293a"
+              target="_blank"
+              rel="noopener"
+              class="ep-title link-arrow"
+              data-lang-block="ja"
+            >
+              第1話　故障した偵察機 ― 最初の「MAYDAY」
+            </a>
+            <a
+              href="https://note.com/modern_owl1687/n/ncbb44ebe48f2"
+              target="_blank"
+              rel="noopener"
+              class="ep-title link-arrow"
+              data-lang-block="en"
+            >
+             Episode 1: The Broken Recon Plane — First “MAYDAY” 
+            </a>
+            <div class="ep-meta" data-lang-block="ja">
+              <span>🎬 夜明け前の海峡上空、老朽化した偵察機が帰投中に故障を起こし、通信室に「MAYDAY」が響く。
+燃料はギリギリ、天候は悪化。敵味方双方のレーダーが、その一機だけをじっと見つめる。
+たった一つの機械トラブルが、誤解と緊張の連鎖を生みかねない状況の中、各国のオペレーターたちは「撃墜」か「救難」かの判断を迫られる。ここで描かれるのは、国境線のわずかな揺らぎが戦争の引き金になりうるという、冷たいリアルだ。</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>📺 Before dawn over the strait, an aging reconnaissance aircraft suffers a malfunction while returning to base. A “MAYDAY” call echoes through the communications room.
+Fuel is critically low. Weather conditions are deteriorating.
+On both sides of the border, radar operators fix their eyes on a single blip in the sky.
+A lone mechanical failure risks triggering a chain of misunderstanding and escalation.
+Operators on both sides are forced to confront the same question: shoot it down, or attempt a rescue?
+This episode portrays the cold reality that even a slight disturbance along a border can become the spark of war.</span>
+          </li>
+          <li>
+            <span class="badge">【黎明シリーズ外伝：R-17】②</span>
+            <a
+              href="https://note.com/modern_owl1687/n/n76d10f9a7724"
+              target="_blank"
+              rel="noopener"
+              class="ep-title link-arrow"
+              data-lang-block="ja"
+            >
+              第2話：海峡の塔の男 ― S国防空管制官リョウ 
+            </a>
+            <a
+              href="https://note.com/modern_owl1687/n/n8d1881dc454b"
+              target="_blank"
+              rel="noopener"
+              class="ep-title link-arrow"
+              data-lang-block="en"
+            >
+              Episode 2: The Man in the Tower of the Strait — Ryo, Air-Defense Controller 
+            </a>
+            <div class="ep-meta" data-lang-block="ja">
+              <span>🎬 S国東部の防空管制塔で、レーダー監視を続ける空自将校リョウ。
+彼はレーダー画面の点から「人の癖」を読み取るタイプのオペレーターで、かつては誤射寸前の状況を読み替えて事態を収めた経験を持つ。しかし今回は、故障機を「敵の偵察行動」と見るか「遭難機」と見るかで、上層部と意見が割れる。
+リョウは、画面ににじむ飛行パターンから“迷っているパイロット”の気配を感じ取り、指揮系統の中で孤立しながらも「撃つな」と進言し続ける。</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>📺 At an air defense control tower in eastern S-Nation, air self-defense officer Ryo monitors radar screens.
+He is known for reading “human intent” from flight patterns, having once prevented an accidental shoot-down by reinterpreting ambiguous data.
+This time, however, command is divided:
+Is the disabled aircraft an enemy reconnaissance maneuver—or a distressed aircraft?
+Sensing hesitation in the pilot’s movements, Ryo continues to argue “Do not fire,” even as he becomes isolated within the chain of command.</span>
+          </li>
+          </li>
+          <li>
+            <span class="badge">【黎明シリーズ外伝：R-17】➂</span>
+            <a
+              href="https://note.com/modern_owl1687/n/nf82ae12941a4"
+              target="_blank"
+              rel="noopener"
+              class="ep-title link-arrow"
+              data-lang-block="ja"
+            >
+              第3話：格納庫の白い灯 ― 技術中佐ミナトとR-17
+            </a>
+            <a
+              href="https://note.com/modern_owl1687/n/nf653f110eab8"
+              target="_blank"
+              rel="noopener"
+              class="ep-title link-arrow"
+              data-lang-block="en"
+            >
+                       Episode 3: White Lights in the Hangar — Lt. Col. Minato and the R-17
+            </a>
+            <div class="ep-meta" data-lang-block="ja">
+              <span>🎬 基地の片隅、古い格納庫で試験中の防空戦闘機 R-17。技術中佐ミナトは、R-17の「自律飛行補正システム」に最後の調整を加えている。R-17は、本来は“誤射を減らすための機体”として、AIによる識別と回避行動を組み込まれていた。しかし予算と政治的思惑から、その機能の多くは封印されかけている。ミナトはエンジン音とモニターの数値を見つめながら、「この機体があれば、あの故障機を誰も撃たずに済むのに」と歯噛みする。</span>
+             </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>📺 In a quiet corner of the base, inside an aging hangar, the prototype air defense fighter R-17 undergoes final testing.Technical Lieutenant Colonel Minato fine-tunes its autonomous flight correction system.
+R-17 was originally designed to reduce accidental engagements, integrating AI-based identification and avoidance logic.
+Yet political pressure and budget constraints have placed many of these functions on the verge of being sealed away.
+Listening to the engine’s tone and watching the data streams, Minato clenches his jaw.
+“If this aircraft were allowed to fly as intended, no one would have to shoot that reconnaissance plane.” </span>
+ 
+          </li>
+          <li>
+            <span class="badge">【黎明シリーズ外伝：R-17】④</span>
+            <a
+              href="https://note.com/modern_owl1687/n/n4b9108a6f47d"
+              target="_blank"
+              rel="noopener"
+              class="ep-title link-arrow"
+              data-lang-block="ja"
+            >
+              第4話：敵基地の格納庫と、パイロットの夜
+            </a>
+            <a
+              href="https://note.com/modern_owl1687/n/n82db01ac85ad"
+              target="_blank"
+              rel="noopener"
+              class="ep-title link-arrow"
+              data-lang-block="en"
+            >
+              Episode 4: The Enemy Base Hangar and the Pilot’s Night
+ 
+            </a>
+            <div class="ep-meta" data-lang-block="ja">
+             <span>🎬 一方、対岸の国の基地。そこでも同じように、暗い格納庫で戦闘機が整備され、若いパイロットが出撃命令を待っている。彼は、画面越しにしか見たことのない「敵国の海岸線」を思い浮かべながら、自分がもし故障したとき、相手国は自分をどう扱うのかを考える。作戦会議室では強硬派の将官たちが「故障機であろうと領空侵犯は撃ち落とすべきだ」と声を荒らげるが、現場の整備士たちは皆、かつての事故や仲間の死を思い出し、言葉を飲み込む。</span> 
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+            <span>📺 Across the strait, in an opposing nation’s base, another hangar glows dimly.
+A young pilot waits for sortie orders, staring at images of an enemy coastline he has only ever seen through a screen.
+He wonders how he himself would be treated if his aircraft failed over hostile airspace.
+In the briefing room, hardline generals insist that any airspace violation must be shot down, malfunction or not.
+But mechanics and ground crew—haunted by past accidents and lost comrades—remain silent.</span>
+          </li>
+          <li>
+            <span class="badge">【黎明シリーズ外伝：R-17】⑤</span>
+            <a
+              href="https://note.com/modern_owl1687/n/nc3a4320e8eca"
+              target="_blank"
+              rel="noopener"
+              class="ep-title link-arrow"
+              data-lang-block="ja"
+            >
+             第5話：敵基地の朝と、「見えない交渉」のはじまり 
+            </a>
+            <a
+              href="https://note.com/modern_owl1687/n/n6ef56825e6b8"
+              target="_blank"
+              rel="noopener"
+              class="ep-title link-arrow"
+              data-lang-block="en"
+            >
+              Episode 5: The Enemy Base Morning and the Beginning of “Invisible Negotiations”
+            </a>
+            <div class="ep-meta" data-lang-block="ja">
+              <span>🎬 故障機をめぐる対峙は夜を越え、両国のレーダー画面には「ギリギリ引き返せるライン」が描かれる。公式な外交チャンネルは硬直したままだが、実は水面下で、情報士官同士の非公式な通信が始まっていた。「そちらの機体を救難扱いにする代わりに、今回はお互い撃たないで引き上げないか」。誰も表に出さない、“見えない交渉”が、戦端を開くか防ぐかの分かれ目となる。</span>
+ 
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>📺 The standoff extends into morning.
+On both sides, radar displays now show a narrow margin—a line where the aircraft could still turn back safely.
+Official diplomatic channels remain frozen.
+Yet beneath the surface, unofficial communications between intelligence officers quietly begin.
+“If we treat your aircraft as a rescue case, can we both stand down this time?”
+An unspoken negotiation emerges, balancing on the edge between escalation and restraint.</span>
+          </li>
+          <li>
+            <span class="badge">【黎明シリーズ外伝：R-17】⑥</span>
+            <a
+              href="https://editor.note.com/notes/n5e00dcda7150/edit/"
+              target="_blank"
+              rel="noopener"
+              class="ep-title link-arrow"
+              data-lang-block="ja"
+            >
+              第6話：暫定の橋（ブリッジ） 
+            </a>
+            <a
+              href="https://note.com/modern_owl1687/n/nede4d824dd30"
+              target="_blank"
+              rel="noopener"
+              class="ep-title link-arrow"
+              data-lang-block="en"
+            >
+             Episode 6: The Temporary Bridge
+            </a>
+            <div class="ep-meta" data-lang-block="ja">
+              <span>🎬 結局、故障機はある「暫定ルート」を通って海峡を抜けることになる。そのルートは、双方のレーダーと防空ミサイルの射程をギリギリかすめる、細い一本の線。リョウたちは、その線を「ブリッジ」と呼び、スクリーンの上に仮想の橋として描き出す。これをきっかけに、海峡上空には「相手の誤操作や故障を前提として救うための道」が、秘密裏に設定される。戦争を避けるための橋は、紙にも条約にも書かれないが、少なくとも現場のオペレーターたちの間では確かに共有され始める。</span>
+             </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>📺 Ultimately, the disabled aircraft is guided through a temporary route across the strait.
+This route threads the narrow gap between radar coverage and missile engagement zones—an invisible line in the sky.
+Ryo and his team label it “the Bridge,” drawing it onto their screens as a virtual structure.
+From that moment, a secret understanding begins to form:
+a path designed to save aircraft affected by error or malfunction—without regard to nationality.
+The bridge is written into no treaty, recorded in no document.
+Yet among operators, it becomes real.</span>
+          </li>
+          <li>
+            <span class="badge">【黎明シリーズ外伝：R-17】⑦</span>
+            <a
+              href="https://note.com/modern_owl1687/n/n2e98e078a8e7"
+              target="_blank"
+              rel="noopener"
+              class="ep-title link-arrow"
+              data-lang-block="ja"
+            >
+              第7話：帰還フライト 
+            </a>
+            <a
+              href="https://note.com/modern_owl1687/n/n3472df2c93b0"
+              target="_blank"
+              rel="noopener"
+              class="ep-title link-arrow"
+              data-lang-block="en"
+            >
+              Episode 7: Return Flight
+            </a>
+            <div class="ep-meta" data-lang-block="ja">
+               <span> 故障機は、ぎりぎりの燃料と不安定な操縦系を抱えながらも帰路につく。パイロットは、自分を撃たなかった“見えない誰か”の存在を感じつつ、計器をにらみ続ける。基地に着陸したあとも、公式記録には「機材トラブル」の一行しか残らない。
+しかし、彼の胸には「自分は撃たれていてもおかしくなかった」という実感が残り、その経験談はやがて若いパイロットたちの間で語り草になる。</span>
+             </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>📺 With unstable controls and minimal fuel, the reconnaissance aircraft limps home.
+The pilot senses the presence of someone—unseen—who chose not to fire.
+The official report records only: “Equipment malfunction.”
+But the experience lingers, eventually passed down as quiet lore among younger pilots.</span>
+          </li>
+ 
+          <li>
+            <span class="badge">【黎明シリーズ外伝：R-17】⑧</span>
+            <a
+              href="https://note.com/modern_owl1687/n/n6fa1436d036c"
+              target="_blank"
+              rel="noopener"
+              class="ep-title link-arrow"
+              data-lang-block="ja"
+            >
+              第8話：敵基地緊急着陸事件（後編）― 副パイロットは見ていた
+            </a>
+            <a
+              href="https://note.com/modern_owl1687/n/n5bda0ff851b8"
+              target="_blank"
+              rel="noopener"
+              class="ep-title link-arrow"
+              data-lang-block="en"
+            >
+              Episode 8: Emergency Landing Incident (Part 2) — What the Co-Pilot Saw
+            </a>
+            <div class="ep-meta" data-lang-block="ja">
+             <span>🎬 敵基地緊急着陸事件（後編） ― 副パイロットは見ていた 終章では、視点が副パイロットへと移る。彼は、故障機が緊急着陸した敵基地の滑走路で、一瞬だけ見た“相手国の整備士たちの顔”を忘れられない。敵兵であるはずの彼らが、純粋に「飛行機を無事に止める」ことだけに集中していた姿。その記憶は、のちにAI副大臣の設計思想──「敵味方を越えて生存確率を最大化する判断」──を書き込む際の、静かな原風景となる。</span> 
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span> The final episode shifts perspective to the co-pilot.
+During the emergency landing at an enemy airbase, he briefly sees the faces of opposing mechanics on the runway.
+They are focused solely on stopping the aircraft safely.
+That image—of enemies united by technical duty—never leaves him.
+Years later, it becomes a silent origin story behind the AI Vice-Minister’s design philosophy:
+“Decisions that maximize survival probability beyond enemy distinctions.”</span>
+            </div>
+          </li>
+ 
+          <li>
+            <span class="badge">🌅 Guide</span>
+            <div class="ep-meta" data-lang-block="ja">
+              <span> C.「AI副大臣設計手帳」シリーズの解説</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>0. Test Flight — The Experiment of the “Non-Deciding AI”</span>
+            </div>
+            <a href="https://note.com/modern_owl1687/n/n1f4ce78f7b1f"
+              target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja" >
+              🎬 LUX-01 の“憲法”を作っていく思想ライン
+            </a>
+            <a href="https://note.com/modern_owl1687/n/n3a5e0e3304f7"
+              target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en" >        
+              📺 [Guide] The Dawn Series — How to Read
+            </a>
+          </li>
+<!--Guide ★📺   ★🎬 The philosophical line in which LUX-01’s “constitution” is created   -->
+        </ul>
+        <ul class="list">
+          <li>
+            <span class="badge">C-1</span>
+            <div class="ep-meta" data-lang-block="ja">
+              <span>第1回：テスト飛行  </span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>Part 1: Test Flight</span>
+            </div>
+            <a href="https://note.com/modern_owl1687/n/nda2183e72360"
+              target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja"
+            >
+             🎬 一人のパイロットから始まる、決めないAIの実地実験 
+            </a>
+            <a href="https://note.com/modern_owl1687/n/n2603bdd773d3"
+              target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en"
+            >        
+              📺 A real cockpit test where a “non-deciding AI” begins with one pilot. 
+            </a>
+          </li>
+<!--C-1 ★🎬 一人のパイロットから始まる「決めないAI」の実験  ★📺 An Experiment in “Undecidable AI”: Beginning with a Single Pilot -->
+          <li>
+            <span class="badge">C-2</span>
+            <div class="ep-meta" data-lang-block="ja">
+              <span>第2回：設計手帳、海を渡る </span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>Part 2: Design Notebook, Crossing the Sea</span>
+            </div>
+            <a href="https://note.com/modern_owl1687/n/n4bf0499547ef"
+              target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja" >
+             🎬 国際拡散編
+            </a>
+            <a href="https://note.com/modern_owl1687/n/nf848688309ab"
+              target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en" >        
+    📺 AI Deputy Minister: Prologue – The Night Before LUX-01
+            </a>
+          </li>
+<!--C-2 ★🎬 国際拡散編  ★📺 International Dissemination -->          <li>
+            <span class="badge">C-3</span>
+            <div class="ep-meta" data-lang-block="ja">
+              <span>第3回：揺れの憲章</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>Session 3: Charter of Shaking</span>
+            </div>
+            <a href="https://note.com/modern_owl1687/n/nec1ecace3130" 
+              target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja" >
+              🎬 AI副大臣設計手帳 v1.1 起草会議
+            </a>
+            <a href="https://note.com/modern_owl1687/n/na95ebbe79443"
+              target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en" >
+              📺 Design Handbook v1.1   
+            </a>
+          </li>
+<!--C-3 ★🎬 AI副大臣設計手帳 v1.1 起草会議  ★📺 Design Handbook v1.1  -->
+          <li>
+            <span class="badge">C-4</span>
+            <div class="ep-meta" data-lang-block="ja">
+              <span>第4回：救急室の十字路</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>4. Crossroads in the ER</span>
+            </div>
+            <a href="https://note.com/modern_owl1687/n/n21aa6afdcd0d"
+              target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja"
+            >
+            🎬 医療トリアージAIと「揺れの憲章」 
+            </a>
+            <a href="https://note.com/modern_owl1687/n/ne67c906653ef" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en"
+            >
+            📺 AI Deputy Minister Design Handbook v1.1
+            </a>
+          </li>
+<!--C-4 ★🎬 医療トリアージAIと「揺れの憲章」  ★📺 AI Deputy Minister Design Handbook v1.1 -->
+          <li>
+            <span class="badge">C-5</span>
+            <div class="ep-meta" data-lang-block="ja">
+              <span>第5回：投票所のノイズ </span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>5. Noise at the Polling Station</span>
+            </div>
+            <a href="https://note.com/modern_owl1687/n/n4d21d4a05e41" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja"
+            >
+              🎬 選挙AIと「揺れの憲章」
+            </a>
+            <a href="https://note.com/modern_owl1687/n/n5a10e332f0cc"
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en"
+            >
+             📺  Election AI 
+            </a>
+          </li>
+<!--C-5 ★🎬 選挙AIと「揺れの憲章」  ★📺  Election AI -->
+          <li>
+            <span class="badge">C-6</span>
+            <div class="ep-meta" data-lang-block="ja">
+              <span>第6回：白紙のページの先へ</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>6. Beyond the Blank Page</span>
+            </div>
+            <a href="https://note.com/modern_owl1687/n/n07c35a065750" 
+target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="ja" >
+             🎬 ポスト副大臣期・第六章「共在の規範」
+            </a>
+            <a href="https://note.com/modern_owl1687/n/nf35295fd98a4"
+                      target=“_blank” rel=“noopener noreferrer” class="ep-title link-arrow" data-lang-block="en" >
+             📺 Post-Vice-Minister Era, Chapter Six “Norms of Co-Existence”
+            </a>
+          </li>
+<!--C-6 ★🎬 ポスト副大臣期・第六章「共在の規範」  ★📺 Post-Vice-Minister Era, Chapter Six “Norms of Co-Existence” -->
+        </ul>
+ 
+        <ul class="list">
+          <li>
+ 
+      <!-- 右カラム：黎明シリーズなど -->
+      <section class="section">
+        <div class="pill" data-lang-block="ja">
+          🌏 黎明シリーズ
+        </div>
+        <div class="pill" data-lang-block="en">
+          🌏 Dawn Series Side Stories 
+        </div>
+        <h2 data-lang-block="ja">黎明シリーズ</h2>
+        <h2 data-lang-block="en">Dawn Series Side Stories</h2>
+        <p class="lead" data-lang-block="ja">AI副大臣が判断権を持つ世界を舞台にしたディストピア＋希望の物語を「小説化」する。量子コンピュータ時代における基本理念とルールの確立、統制型AIではなく助言型AIによる政治モデルであり。この物語は「副大臣AI：黎明のルール」として、第一章からの執筆が開始される。
+        </p>
+        <p class="lead" data-lang-block="en">
+          A dystopian + hope story set in a world where the AI Deputy Minister has the right to make decisions is "novelized". It is a political model based on the establishment of basic principles and rules in the era of quantum computers, and an advisory AI rather than a controlled AI. This story will be written as "Deputy Minister AI: Rules of Dawn" from the first chapter.
+          </p>
+        </li>
+      </ul>
+      <ul class="list">
+          <li>
+            <span class="badge">E-0</span>
+            <a
+              href="https://note.com/modern_owl1687/n/nbd5d7b02676d"
+              target="_blank"
+              rel="noopener"
+              class="ep-title link-arrow"
+              data-lang-block="ja"
+            >
+            『AI副大臣：黎明のルール』 【第1回】第一章：副大臣AIの誕生
+            </a>
+            <div class="ep-meta" data-lang-block="ja">
+              <span>🎬 助言型AI「副大臣AI」が生まれる必然と、その初期条件を描く導入章。（第１回作品）</span>
+            </div>
+          </li>
+ 
+          <li>
+            <span class="badge">E-1</span>
+            <a
+              href="https://note.com/modern_owl1687/n/n8db3a0709781"
+              target="_blank"
+              rel="noopener"
+              class="ep-title link-arrow"
+              data-lang-block="ja"
+            >
+              黎明シリーズ第3巻 第1回
+            </a>
+            <a
+              href="https://note.com/modern_owl1687/n/ne858186ff828"
+              target="_blank"
+              rel="noopener"
+              class="ep-title link-arrow"
+              data-lang-block="en"
+            >
+              📘 The Dawn Genome Episode 1: The Oath at Dawn
+            </a>
+<!--   E-1          • JP：第3巻の起点として、世界観の焦点と主要テーマを立ち上げる回。
+• EN：The first installment of Volume III, establishing the new focus and core themes.   -->
+            <div class="ep-meta" data-lang-block="ja">
+              <span>🎬 第3巻の起点として、世界観の焦点と主要テーマを立ち上げる回。</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>📺 The first installment of Volume III, establishing the new focus and core themes.</span>
+            </div>
+          </li>
+        </ul>
+        <ul class="list">
+          <li>
+            <span class="badge">E-2</span>
+            <a
+              href="https://note.com/modern_owl1687/n/n3bf92386d558"
+              target="_blank"
+              rel="noopener"
+              class="ep-title link-arrow"
+              data-lang-block="ja"
+            >
+              黎明シリーズ第3巻 第2回
+            </a>
+            <a
+              href="https://note.com/modern_owl1687/n/nf96804309bf5"
+              target="_blank"
+              rel="noopener"
+              class="ep-title link-arrow"
+              data-lang-block="en"
+            >
+              📘 The Dawn Series — Volume III, Episode 2　Currency, Resource, and Energy Sovereignty
+            </a>
+<!--   E-2          • JP：制度・現場・感情が交差し始め、物語が「運用フェーズ」へ進む回。
+• EN：Where systems, frontline reality, and human emotion begin to collide—pushing the story into an “operational phase.” -->
+            <div class="ep-meta" data-lang-block="ja">
+              <span>🎬 制度・現場・感情が交差し始め、物語が「運用フェーズ」へ進む回。</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>📺 Where systems, frontline reality, and human emotion begin to collide—pushing the story into an “operational phase.”</span>
+            </div>
+          </li>
+          <li>
+            <span class="badge">E-3</span>
+            <a
+              href="https://editor.note.com/notes/nea0392752106/edit/"
+              target="_blank"
+              rel="noopener"
+              class="ep-title link-arrow"
+              data-lang-block="ja"
+            >
+              黎明シリーズ第3巻 第3回
+            </a>
+            <a
+              href="https://note.com/modern_owl1687/n/n879753e8c03a"
+              target="_blank"
+              rel="noopener"
+              class="ep-title link-arrow"
+              data-lang-block="en"
+            >
+              📘 The Dawn Series — Volume III, Episode 3 　　Currency, Resources, and Energy Sovereignty
+            </a>
+<!--  E-3          • JP：判断の境界線と代償が具体化し、緊張が一段上がる転換回。
+• EN：A turning point where decision boundaries and their costs become concrete, raising the stakes. -->
+            <div class="ep-meta" data-lang-block="ja">
+              <span>🎬 判断の境界線と代償が具体化し、緊張が一段上がる転換回。</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>📺 A turning point where decision boundaries and their costs become concrete, raising the stakes.</span>
+            </div>
+          </li>
+          <li>
+            <span class="badge">E-4</span>
+            <a
+              href="https://note.com/modern_owl1687/n/ne72523ae5b08"
+              target="_blank"
+              rel="noopener"
+              class="ep-title link-arrow"
+              data-lang-block="ja"
+            >
+             黎明シリーズ第3巻 ― 完結編：黎明の遺伝（The Dawn Genome）
+            </a>
+<!--  E-4          • JP：第3巻の総決算として、受け継がれる理念と未来への継承を回収する完結編。
+• EN：The conclusion of Volume III, tying together the inherited ideals and what they pass on to the future (“The Dawn Genome”).   -->
+            <div class="ep-meta" data-lang-block="ja">
+              <span>🎬 第3巻の総決算として、受け継がれる理念と未来への継承を回収する完結編。</span>
+            </div>
+          </li>
+          <li>
+            <span class="badge">E-6</span>
+            <a
+              href="https://note.com/modern_owl1687/n/n509d9d48f3b8"
+              target="_blank"
+              rel="noopener"
+              class="ep-title link-arrow"
+              data-lang-block="ja"
+            >
+              📘 改訂版：黎明のルール Pre-Dawn to Quantum Society Edition
+            </a>
+            <a
+              href="https://note.com/modern_owl1687/n/ncf760babdfff"
+              target="_blank"
+              rel="noopener"
+              class="ep-title link-arrow"
+              data-lang-block="en"
+            >
+              📘 The Rule of Dawn 
+            </a>
+<!--  E-6          • JP：量子社会前夜まで射程を広げ、設定・概念を再整理した改訂版。
+• EN：A revised edition that expands the scope toward the pre-quantum era, reorganizing key concepts and settings. -->
+            <div class="ep-meta" data-lang-block="ja">
+              <span>🎬 量子社会前夜まで射程を広げ、設定・概念を再整理した改訂版。</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>📺 A revised edition that expands the scope toward the pre-quantum era, reorganizing key concepts and settings. </span>
+            </div>
+          </li>
+ 
+          <li>
+            <span class="badge">E-7</span>
+            <a
+              href="https://note.com/modern_owl1687/n/n402f63018c4d"
+              target="_blank"
+              rel="noopener"
+              class="ep-title link-arrow"
+              data-lang-block="ja"
+            >
+              📘 #AIと政治
+            </a>
+<!--  E-7          • JP：AIが政治に関与する際の論点（権限・責任・抑制）をまとめるタグ枠。
+• EN：A tag hub for the key questions of AI in politics—authority, accountability, and restraint. -->
+            <div class="ep-meta" data-lang-block="ja">
+              <span>🎬 AIが政治に関与する際の論点（権限・責任・抑制）をまとめるタグ枠。</span>
+            </div>
+          </li>
+          <li>
+            <span class="badge">E-8</span>
+            <a
+              href="https://note.com/modern_owl1687/n/n4a6da66d5561"
+              target="_blank"
+              rel="noopener"
+              class="ep-title link-arrow"
+              data-lang-block="ja"
+            >
+              📘 #AI副大臣
+            </a>
+<!--  E-8          • JP：副大臣AIの役割・限界・運用思想を追えるテーマ別まとめ。
+• EN：A thematic hub tracking the Vice-Minister AI’s role, limits, and operating philosophy.  -->
+            <div class="ep-meta" data-lang-block="ja">
+              <span>🎬 副大臣AIの役割・限界・運用思想を追えるテーマ別まとめ。</span>
+            </div>
+          </li>
+          <li>
+            <span class="badge">E-9</span>
+            <a
+              href="https://note.com/modern_owl1687/n/n7c26b8f24123"
+              target="_blank"
+              rel="noopener"
+              class="ep-title link-arrow"
+              data-lang-block="ja"
+            >
+              📘 #ChatGPT共著｜『黎明ルール』スピンオフ
+            </a>
+<!--  E-9          • JP：『黎明のルール』世界の枝葉を広げるスピンオフ群（共著企画）。
+• EN：Co-authored spin-offs that expand the Dawn Rules universe through side threads and variations.   -->
+            <a
+              href="https://note.com/modern_owl1687/n/n963b4987760f"
+              target="_blank"
+              rel="noopener"
+              class="ep-title link-arrow"
+              data-lang-block="en"
+            >
+              🌅 LUX and the Night the World Almost Froze – Part II
+            </a>
+            <div class="ep-meta" data-lang-block="ja">
+              <span>🎬 『黎明のルール』世界の枝葉を広げるスピンオフ群（共著企画）。</span>
+            </div>
+            <div class="ep-meta" data-lang-block="en">
+              <span>📺 Co-authored spin-offs that expand the Dawn Rules universe through side threads and variations.  </span>
+            </div>
+ 
+          </li>
+ 
+      </ul>
+      </section>
+    </main>
+ 
+    <footer>
+      <div data-lang-block="ja">
+        Hosted on GitHub Pages ／ 作品本文は
+        <a href="#"target=“_blank” rel=“noopener noreferrer”
+          >note（machin530）</a
+        >
+        にて連載中。黎明シリーズ外伝：R-17】④
+      </div>
+      <div data-lang-block="en">
+        Hosted on GitHub Pages. Main stories are serialized on
+        <a href="#"target=“_blank” rel=“noopener noreferrer”
+          >note (machin530)</a
+        >
+      </div>
+    </footer>
+  </div>
+
+<script>
+  (function () {
+    const body = document.body;
+    const btnJa = document.querySelector('[data-lang-btn="ja"]');
+    const btnEn = document.querySelector('[data-lang-btn="en"]');
+function setLang(lang) {
+      if (lang === "en") {
+        body.classList.add("lang-en");
+        body.classList.remove("lang-ja");
+        btnEn.classList.add("active");
+        btnJa.classList.remove("active");
+        btnEn.setAttribute("aria-pressed", "true");
+        btnJa.setAttribute("aria-pressed", "false");
+      } else {
+        body.classList.add("lang-ja");
+        body.classList.remove("lang-en");
+        btnJa.classList.add("active");
+        btnEn.classList.remove("active");
+        btnJa.setAttribute("aria-pressed", "true");
+        btnEn.setAttribute("aria-pressed", "false");
+      }
+    }
+btnJa.addEventListener("click", () => setLang("ja"));
+    btnEn.addEventListener("click", () => setLang("en"));
+// 初期状態を保証
+    setLang(body.classList.contains("lang-en") ? "en" : "ja");
+  })();
+</script>
+</body>
+</html>
+
